@@ -1,85 +1,333 @@
-# Análise de Sentimentos com Language Studio no Azure AI
+# Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI
 
-Repositório criado como entregável do desafio de projeto do **Bootcamp Suzano - Python Developer**, da [DIO](https://www.dio.me). O objetivo foi praticar e aprofundar o uso das ferramentas **Azure Speech Studio** e **Language Studio**, com foco em análise de fala e linguagem natural.
+## 1. Sobre o projeto
 
-## 📋 Sobre o desafio
+Repositório desenvolvido como entregável do desafio de projeto do **Bootcamp Suzano — Python Developer**, da [DIO](https://www.dio.me/), com foco na exploração de recursos de **Inteligência Artificial, Processamento de Linguagem Natural (NLP) e tecnologias de fala do ecossistema Microsoft Azure**.
 
-Laboratório prático com o objetivo de desenvolver habilidades na criação de soluções de IA voltadas para voz e linguagem, utilizando o ecossistema Azure AI. Este repositório reúne as anotações, capturas de tela e insights adquiridos durante a prática, servindo como material de apoio para estudos futuros.
+O projeto reúne estudos, experimentações, conceitos técnicos e aprendizados relacionados ao **Azure Language / Language Studio** e ao **Azure Speech / Speech Studio**, além da exploração conceitual de tecnologias relacionadas à linguagem conversacional, sistemas de perguntas e respostas e agentes de IA.
 
-## 🎯 Objetivos de aprendizagem
+> **TL;DR:** Projeto de aprendizagem em Azure AI com foco em **NLP, análise de sentimentos, mineração de opinião, reconhecimento de entidades, processamento de texto e fala**. Também foram estudados conceitualmente **Question Answering, Conversational Language Understanding (CLU), Microsoft Copilot Studio e Azure AI Bot Service**. O repositório foi estruturado como documentação técnica no GitHub.
 
-- Aplicar os conceitos aprendidos em um ambiente prático
-- Documentar processos técnicos de forma clara e estruturada
-- Utilizar o GitHub como ferramenta para compartilhamento de documentação técnica
-- Explorar o Azure Speech Studio e a análise linguística proporcionada pelo Language Studio
+Este laboratório teve como objetivo explorar recursos de Inteligência Artificial voltados para **linguagem natural e fala**, utilizando interfaces e serviços do ecossistema Azure AI.
 
-## 🛠️ Ferramentas utilizadas
+No contexto do desafio, foram abordados conceitos e funcionalidades relacionados a:
 
-- **Azure Speech Studio** — reconhecimento e síntese de fala
-- **Azure Language Studio** — análise de texto e compreensão de linguagem natural
-- **Azure AI Services** — plataforma de serviços cognitivos da Microsoft
+- Processamento de Linguagem Natural (NLP);
+- análise de sentimentos;
+- mineração de opinião;
+- extração de frases-chave;
+- reconhecimento de entidades nomeadas (NER);
+- detecção de idioma;
+- sumarização;
+- processamento de fala;
+- conversão de fala em texto;
+- compreensão de linguagem conversacional;
+- sistemas de perguntas e respostas;
+- integração conceitual entre serviços de fala e linguagem.
 
-## 🔍 Entendendo as ferramentas
+O **Azure Language** disponibiliza recursos para processamento de linguagem natural, incluindo análise de sentimentos, mineração de opinião, reconhecimento de entidades, extração de frases-chave, detecção de idioma, sumarização e outros cenários de processamento de texto.
 
-### Azure Speech Studio
+O **Speech Studio** oferece uma interface para explorar recursos do Azure Speech, incluindo conversão de fala em texto, tradução de fala, avaliação de pronúncia, síntese de voz e outros recursos relacionados ao processamento de fala.
 
-É a interface do Azure AI Services voltada para tudo relacionado a voz. Principais capacidades:
-
-* **Speech to Text (reconhecimento de fala)** — converte áudio em texto, com suporte a transcrição em tempo real ou de arquivos gravados. Permite treinar modelos customizados para vocabulário específico (nomes técnicos, jargões, sotaques).
-* **Text to Speech (síntese de voz)** — converte texto em áudio com vozes neurais bem naturais; dá pra escolher entre vozes prontas ou criar uma voz customizada.
-* **Speech Translation** — tradução de fala em tempo real entre idiomas.
-* **Speaker Recognition** — identifica ou verifica quem está falando (útil em cenários de biometria de voz).
-* **Pronunciation Assessment** — avalia a pronúncia do usuário, comum em apps de ensino de idiomas.
-
-No laboratório da DIO, o foco costuma ser explorar o Speech to Text — gravar ou usar um áudio de exemplo, rodar o reconhecimento e observar a precisão da transcrição, testando diferentes idiomas/sotaques.
-
-### Azure Language Studio
-
-É a interface para tudo relacionado a texto e linguagem natural (NLP). Principais capacidades:
-
-* **Análise de sentimento e mineração de opinião** — classifica um texto como positivo, negativo, neutro ou misto, e ainda aponta frases específicas que geraram cada sentimento.
-* **Extração de frases-chave** — identifica os termos mais relevantes de um texto.
-* **Reconhecimento de entidades nomeadas (NER)** — identifica pessoas, lugares, organizações, datas etc. dentro do texto.
-* **Detecção de idioma** — identifica automaticamente em que idioma o texto foi escrito.
-* **Sumarização de texto** — gera resumos automáticos de documentos ou conversas.
-* **Question Answering** — cria uma base de perguntas e respostas a partir de documentos (o "Análise de texto e resposta a perguntas" que aparece no print da DIO).
-* **Conversational Language Understanding (CLU)** — treina modelos para entender intenção em linguagem coloquial, usado para construir bots (ligado ao "Serviço de bot do Azure" que também aparece no conteúdo do desafio).
-
-### Como eles se conectam no desafio
-
-A lógica comum de um pipeline de IA de voz e linguagem é:
-
-1. Speech Studio transcreve o áudio (voz → texto)
-2. Language Studio analisa esse texto (sentimento, entidades, intenção, etc.)
-
-Ou seja, um usuário fala algo, o Speech Studio transcreve, e o Language Studio interpreta o que foi dito — por exemplo, detectando se o cliente está insatisfeito em uma ligação de call center, ou entendendo a intenção por trás de um comando de voz para um bot.
-
-## 📚 Conteúdo explorado
-
-- [Análise de texto e resposta a perguntas](docs/language-studio.md)
-- [Serviço de bot do Azure](docs/language-studio.md)
-- [Compreensão da linguagem coloquial](docs/language-studio.md)
-- [Estúdio de fala (Speech Studio)](docs/speech-studio.md)
-- [Language Studio](docs/language-studio.md)
-
-## 📝 Anotações e insights
-
-As anotações detalhadas de cada etapa da prática estão organizadas na pasta [`docs/`](docs/):
-
-- **[speech-studio.md](docs/speech-studio.md)** — anotações sobre reconhecimento de fala, transcrição e síntese de voz no Azure Speech Studio
-- **[language-studio.md](docs/language-studio.md)** — anotações sobre análise de texto, extração de informações e compreensão de linguagem coloquial no Language Studio
-- **[insights.md](docs/insights.md)** — principais aprendizados, desafios encontrados e reflexões sobre aplicações práticas
-
-## 🖼️ Capturas de tela
-
-As evidências visuais da prática estão disponíveis em [`assets/screenshots/`](assets/screenshots/).
-
-## ✅ Resultado
-
-Repositório documentado com o passo a passo da prática realizada, servindo como referência pessoal e material de estudo para futuras implementações envolvendo IA de voz e linguagem no Azure.
+> **Nota sobre o escopo:** os recursos relacionados ao Azure Language / Language Studio e Azure Speech / Speech Studio foram explorados no contexto do laboratório. **Question Answering, Conversational Language Understanding (CLU), Microsoft Copilot Studio e Azure AI Bot Service foram estudados conceitualmente por meio da documentação oficial da Microsoft e dos materiais do desafio.** Esses recursos não são apresentados como implementações práticas realizadas neste projeto.
 
 ---
 
-**Autor:** Nágyla Aparecida Silva
-**Bootcamp:** Suzano - Python Developer — DIO
+## 2. O que foi praticado
 
+### 2.1 Azure Language e Language Studio
+
+O **Azure Language** fornece recursos de processamento de linguagem natural que podem ser utilizados para analisar, classificar, extrair informações e compreender conteúdo textual.
+
+Os recursos a seguir foram explorados diretamente na interface do **Language Studio**, no contexto do laboratório.
+
+### 2.2 Análise de sentimentos e mineração de opinião
+
+Permite analisar textos para identificar a polaridade de sentimentos e opiniões expressas no conteúdo.
+
+Possíveis aplicações incluem:
+
+- avaliações de clientes;
+- comentários;
+- pesquisas de satisfação;
+- feedbacks;
+- interações de atendimento;
+- análise de opiniões.
+
+### 2.3 Extração de frases-chave
+
+Permite identificar termos e expressões relevantes presentes em um texto, auxiliando na identificação dos principais assuntos abordados.
+
+Pode ser utilizada em cenários como:
+
+- classificação de conteúdo;
+- organização de documentos;
+- análise de feedback;
+- indexação;
+- descoberta de tópicos.
+
+### 2.4 Reconhecimento de Entidades Nomeadas (NER)
+
+Permite identificar e classificar elementos presentes em um texto, como:
+
+- pessoas;
+- organizações;
+- locais;
+- datas;
+- outras categorias de entidades.
+
+Esse processamento pode contribuir para transformar informações textuais em dados estruturados.
+
+### 2.5 Detecção de idioma
+
+Permite identificar automaticamente o idioma de um conteúdo textual, sendo útil em aplicações que precisam processar informações provenientes de diferentes idiomas.
+
+### 2.6 Sumarização
+
+Permite produzir versões resumidas de documentos, conversas e outros conteúdos extensos, facilitando a identificação das principais informações.
+
+### 2.7 Azure Speech e Speech Studio
+
+O **Speech Studio** é uma interface baseada em navegador para explorar recursos do Azure Speech.
+
+Entre os recursos estudados estão:
+
+- **Speech to Text** — conversão de fala em texto;
+- **Batch Speech to Text** — transcrição em lote;
+- **Text to Speech** — síntese de voz;
+- **Speech Translation** — tradução de fala;
+- **Pronunciation Assessment** — avaliação de pronúncia;
+- **Custom Speech** — recursos de personalização para reconhecimento de fala.
+
+Esses recursos demonstram como tecnologias de IA podem ser aplicadas ao processamento de voz, áudio e linguagem natural.
+
+---
+
+## 3. Aprendizados e competências
+
+A realização do projeto permitiu consolidar conhecimentos sobre **Processamento de Linguagem Natural, análise automatizada de texto, processamento de fala e utilização de serviços de IA em ambiente cloud**.
+
+Entre os principais conhecimentos desenvolvidos estão:
+
+- fundamentos de NLP;
+- análise de sentimentos e mineração de opinião;
+- extração de informações a partir de texto;
+- reconhecimento de entidades;
+- processamento multilíngue;
+- sumarização;
+- processamento e transcrição de fala;
+- leitura e interpretação de documentação técnica;
+- exploração de serviços de IA da Microsoft;
+- documentação de estudos e experimentos;
+- organização de projetos técnicos no GitHub.
+
+Esses conhecimentos apresentam relação com competências utilizadas em áreas como:
+
+- Inteligência Artificial;
+- AI Training;
+- AI Response Evaluation;
+- Data Annotation;
+- Quality Assurance (QA);
+- Processamento de Linguagem Natural;
+- análise e classificação de dados textuais;
+- documentação técnica.
+
+---
+
+## 4. Exploração conceitual
+
+Além dos recursos explorados no contexto do laboratório, foram estudados conceitualmente outros componentes do ecossistema Microsoft relacionados à linguagem natural e aplicações conversacionais.
+
+### 4.1 Question Answering
+
+O **Question Answering** foi estudado como recurso para criação de sistemas capazes de responder perguntas com base em informações previamente estruturadas e fontes de conhecimento específicas.
+
+Possíveis aplicações incluem:
+
+- atendimento ao cliente;
+- bases de conhecimento;
+- suporte;
+- FAQ automatizado;
+- sistemas de recuperação de informações.
+
+A documentação atual do Azure Language apresenta o **Custom Question Answering (CQA)** como a evolução do antigo QnA Maker para novos desenvolvimentos.
+
+> **Escopo:** este recurso foi explorado conceitualmente e não é apresentado como uma implementação prática realizada neste projeto.
+
+### 4.2 Conversational Language Understanding (CLU)
+
+A **Conversational Language Understanding (CLU)** foi estudada conceitualmente como tecnologia utilizada para identificar **intenções e entidades** em linguagem natural.
+
+Exemplo conceitual:
+
+**Entrada:**
+
+> "Quero consultar o status do meu pedido."
+
+**Intenção:**
+
+> Consultar pedido
+
+**Entidade:**
+
+> Pedido
+
+Esse tipo de processamento pode ser utilizado em agentes e aplicações conversacionais.
+
+> **Escopo:** CLU foi estudada conceitualmente e não é apresentada como implementação prática neste repositório.
+
+### 4.3 Microsoft Copilot Studio
+
+O **Microsoft Copilot Studio** foi explorado conceitualmente como plataforma para criação e personalização de agentes e experiências conversacionais.
+
+O estudo permitiu compreender sua relação com conceitos de:
+
+- agentes;
+- intenções;
+- entidades;
+- tópicos;
+- experiências conversacionais;
+- automação baseada em linguagem natural.
+
+### 4.4 Azure AI Bot Service
+
+O **Azure AI Bot Service** também foi estudado conceitualmente no contexto das tecnologias utilizadas para criação de bots e experiências conversacionais.
+
+Entre os possíveis cenários de aplicação estão:
+
+- atendimento ao cliente;
+- suporte;
+- FAQ automatizado;
+- agentes virtuais;
+- aplicações web;
+- experiências multicanal.
+
+> **Importante:** Question Answering, CLU, Microsoft Copilot Studio e Azure AI Bot Service são apresentados nesta seção como **conhecimentos explorados conceitualmente**, não como soluções implementadas neste projeto.
+
+---
+
+## 5. Relação entre fala e linguagem
+
+Um dos conceitos importantes estudados é a possibilidade de combinar diferentes capacidades de IA em um mesmo fluxo.
+
+### 5.1 Fluxo conceitual
+
+Um exemplo conceitual é:
+
+**Voz → Transcrição → Análise de linguagem → Resultado**
+
+Um possível fluxo seria:
+
+1. O usuário fornece uma gravação de áudio.
+2. Um serviço de Speech realiza a conversão de fala em texto.
+3. O texto resultante pode ser processado por recursos do Azure Language.
+4. O conteúdo pode ser analisado para identificar sentimento, entidades, frases-chave ou idioma.
+5. Os resultados podem ser utilizados por uma aplicação para gerar informações ou apoiar análises.
+
+Esse fluxo representa uma possibilidade de integração entre diferentes capacidades de IA para transformar dados não estruturados, como voz e texto, em informações úteis.
+
+### 5.2 Exemplo de aplicação
+
+Em um cenário de atendimento ao cliente:
+
+**Cliente fala → Speech to Text → Transcrição → Análise de sentimento → Identificação de informações → Análise**
+
+O exemplo demonstra conceitualmente como recursos de processamento de fala e linguagem podem ser combinados em um fluxo de análise.
+
+> **Observação:** o fluxo apresentado representa uma possibilidade de aplicação dos serviços estudados e **não corresponde a uma implementação integrada realizada neste repositório**.
+
+---
+
+## 6. Aplicações relacionadas
+
+Os conhecimentos estudados neste projeto podem ser relacionados a diferentes cenários de aplicação de IA, incluindo:
+
+- análise de satisfação de clientes;
+- análise de feedbacks;
+- classificação de opiniões;
+- processamento automatizado de documentos;
+- atendimento automatizado;
+- chatbots e agentes conversacionais;
+- análise de chamadas de atendimento;
+- transcrição de áudio;
+- sistemas de perguntas e respostas;
+- extração automatizada de informações;
+- aplicações multilíngues;
+- automação de processos baseados em linguagem natural.
+
+Esses cenários representam **possibilidades de aplicação dos conhecimentos estudados** e não devem ser interpretados como soluções implementadas neste repositório.
+
+---
+
+## 7. Conteúdo explorado
+
+### 7.1 Documentação oficial Microsoft
+
+- [Azure Language — documentação oficial](https://learn.microsoft.com/pt-br/azure/ai-services/language-service/)
+- [Azure AI Bot Service — página oficial](https://azure.microsoft.com/en-us/products/ai-services/ai-bot-service/)
+- [Compreensão de linguagem coloquial no Microsoft Copilot Studio](https://learn.microsoft.com/pt-br/microsoft-copilot-studio/advanced-clu-get-started)
+- [Speech Studio — documentação oficial](https://learn.microsoft.com/pt-br/azure/ai-services/speech-service/speech-studio-overview)
+
+### 7.2 Conteúdo complementar
+
+Os conceitos estudados durante o desafio foram consolidados neste README utilizando como referência a documentação oficial da Microsoft e os materiais disponibilizados durante o **Bootcamp Suzano — Python Developer**, da DIO.
+
+A documentação foi utilizada para ampliar a compreensão sobre:
+
+- processamento de linguagem natural;
+- análise de sentimentos;
+- processamento de fala;
+- linguagem conversacional;
+- sistemas de perguntas e respostas;
+- agentes e chatbots;
+- aplicações de IA baseadas em linguagem natural.
+
+---
+
+## 8. Documentação e evidências
+
+Como o repositório atualmente possui o **README.md como documento principal**, a documentação técnica do projeto está consolidada neste arquivo.
+
+O README reúne os conceitos estudados, ferramentas exploradas, descrições dos serviços, aplicações possíveis e principais aprendizados obtidos durante o laboratório.
+
+### Evidências da prática
+
+As informações apresentadas neste repositório foram consolidadas a partir da prática realizada durante o desafio e dos estudos complementares relacionados às tecnologias exploradas.
+
+Atualmente, o repositório não possui capturas de tela ou outras evidências visuais. O **README.md constitui, por ora, a principal documentação do projeto**.
+
+---
+
+## 9. Resultado do projeto
+
+O projeto consolida uma experiência de aprendizagem relacionada a **Inteligência Artificial, Processamento de Linguagem Natural, análise de sentimentos, processamento de fala e serviços de IA em nuvem**.
+
+O resultado principal é a organização dos conhecimentos estudados em uma documentação técnica estruturada, diferenciando claramente os recursos explorados no laboratório daqueles estudados apenas conceitualmente.
+
+---
+
+## Conhecimentos e tecnologias
+
+**Inteligência Artificial | NLP | Azure AI | Azure Language | Language Studio | Azure Speech | Speech Studio | Análise de Sentimentos | Mineração de Opinião | NER | Processamento de Texto | Processamento de Fala | Documentação Técnica | GitHub**
+
+---
+
+## Contexto do projeto
+
+**Bootcamp:** Suzano — Python Developer  
+**Plataforma:** DIO
+
+**Área de interesse:** Inteligência Artificial, AI Response Evaluation, AI Training, Data Annotation, QA e tecnologias relacionadas à IA.
+
+---
+
+## Autora
+
+**Nágyla Silva**
+
+---
+
+## Repositório
+
+**GitHub:**  
+[Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI](https://github.com/silvanagyla92-jpg/analise-sentimentos-language-studio-azure-ai)
