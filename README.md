@@ -306,13 +306,13 @@ O resultado principal é a organização dos conhecimentos estudados em uma docu
 
 ---
 
-## Conhecimentos e tecnologias
+## 10. Conhecimentos e tecnologias
 
 **Inteligência Artificial | NLP | Azure AI | Azure Language | Language Studio | Azure Speech | Speech Studio | Análise de Sentimentos | Mineração de Opinião | NER | Processamento de Texto | Processamento de Fala | Documentação Técnica | GitHub**
 
 ---
 
-## Contexto do projeto
+## 11. Contexto do projeto
 
 **Bootcamp:** Suzano — Python Developer  
 **Plataforma:** DIO
@@ -321,13 +321,13 @@ O resultado principal é a organização dos conhecimentos estudados em uma docu
 
 ---
 
-## Autora
+## 12. Autora
 
 **Nágyla Silva**
 
 ---
 
-## Repositório
+## 13. Repositório
 
 **GitHub:**  
 [Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI](https://github.com/silvanagyla92-jpg/analise-sentimentos-language-studio-azure-ai)
