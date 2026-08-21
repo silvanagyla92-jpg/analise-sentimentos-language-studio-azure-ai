@@ -152,3 +152,10 @@ O README principal informa que os recursos de Azure Language / Language Studio f
 - [Summarization](https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview)
 - [Developer guide](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/developer-guide)
 - [Uso assíncrono de recursos do Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/use-asynchronously)
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
