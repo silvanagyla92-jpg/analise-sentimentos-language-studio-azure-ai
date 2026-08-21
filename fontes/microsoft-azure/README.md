@@ -1,29 +1,36 @@
 # Fontes — Microsoft Azure
 
-## Fonte principal
+## Critério
 
-A documentação oficial da Microsoft Learn é a principal referência técnica deste projeto. Ela deve ser priorizada para conceitos, limitações, APIs, suporte de idiomas, ciclo de vida e procedimentos.
+A documentação oficial da Microsoft Learn é a referência técnica prioritária deste projeto. Ela deve ser utilizada para verificar conceitos, limitações, APIs, suporte de idiomas, requisitos, procedimentos e ciclo de vida dos serviços.
 
 ## Azure Language
 
 - [Azure Language — visão geral](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
-- [Sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api)
+- [Sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview)
 - [Key Phrase Extraction](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview)
 - [Named Entity Recognition](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview)
-- [Custom Question Answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
+- [Summarization](https://learn.microsoft.com/en-us/azure/ai-services/language-service/summarization/overview)
+- [Question Answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
 - [Conversational Language Understanding](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview)
 
 ## Azure Speech
 
 - [Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)
-- [Speech Studio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
+- [Speech to text](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text)
+- [Text to speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech)
 - [Speech Translation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-translation)
+- [Pronunciation Assessment](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/pronunciation-assessment)
 - [Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
-- [Custom Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-speech-overview)
+
+## Ecossistema conversacional
+
+- [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Azure Bot Service](https://learn.microsoft.com/en-us/azure/bot-service/)
 
 ## Atualidade das fontes
 
-Como serviços cloud evoluem, páginas oficiais devem ser consultadas novamente antes de implementar qualquer solução. O projeto registra explicitamente mudanças de ciclo de vida quando relevantes.
+Serviços cloud evoluem continuamente. Antes de implementar uma solução, deve-se consultar a documentação oficial atual e verificar disponibilidade, suporte de idiomas, versão da API e ciclo de vida do recurso.
 
 ---
 
