@@ -1,56 +1,75 @@
-# Sentiment Analysis
+# Sentiment Analysis — Azure Language
 
-## Objetivo
+## Visão geral
 
-O Azure Language oferece análise de sentimentos para identificar a polaridade expressa em textos. O resultado pode indicar sentimentos **positive**, **neutral** ou **negative**, com pontuações de confiança para apoiar a interpretação do resultado.
+**Sentiment Analysis** é um recurso de NLP do Azure Language que estima a polaridade expressa em textos. A classificação principal utiliza as categorias **positive**, **negative** e **neutral**, acompanhadas de pontuações de confiança. O serviço pode produzir resultados no nível do documento e das sentenças.
 
-## Funcionamento
+O objetivo não é "ler emoções" de forma humana, mas transformar padrões linguísticos em uma previsão estruturada. Por isso, o resultado deve ser interpretado como uma saída probabilística do modelo e não como uma verdade sobre a intenção ou o estado emocional do autor.
+
+## Fluxo de processamento
 
 ```text
-Texto de entrada
-      ↓
-Azure Language
-      ↓
-Análise de sentimentos
-      ↓
-Polaridade + confiança
-      ↓
-Interpretação e validação humana
+Texto
+  ↓
+Idioma / localidade
+  ↓
+Pré-processamento e análise NLP
+  ↓
+Sentimento por sentença
+  ↓
+Sentimento agregado do documento
+  ↓
+Pontuações de confiança
+  ↓
+Interpretação e decisão
 ```
 
-A análise pode ser realizada em nível de documento e de sentença. Em textos com várias frases, a análise por sentença permite observar mudanças de polaridade dentro do mesmo documento.
+Em aplicações reais, a qualidade da entrada é importante. Textos muito curtos, sarcasmo, ironia, gírias, negação e referências dependentes de contexto podem dificultar a classificação.
 
 ## Exemplo conceitual
 
-```text
-Entrada: "O atendimento foi excelente, mas o tempo de espera foi ruim."
+> "O atendimento foi rápido, mas o aplicativo apresentou vários erros."
 
-Sentença / aspecto        Polaridade
-Atendimento               Positiva
-Tempo de espera           Negativa
-```
+O texto possui sinais positivos e negativos. A análise por sentença ajuda a localizar essas diferenças e o resultado agregado representa a combinação identificada pelo modelo.
+
+## Sentiment Analysis x Opinion Mining
+
+Os recursos são relacionados, mas não equivalentes:
+
+| Recurso | Pergunta principal |
+|---|---|
+| Sentiment Analysis | Qual é a polaridade do texto? |
+| Opinion Mining | Qual aspecto foi avaliado e qual opinião está associada a ele? |
+
+Exemplo: "A câmera é excelente, mas a bateria é ruim." A análise de sentimento identifica polaridades; a mineração de opinião acrescenta a relação entre **câmera → positivo** e **bateria → negativo**.
 
 ## Aplicações
 
-- análise de avaliações de clientes;
+- análise de avaliações de produtos;
+- classificação de feedback de clientes;
 - pesquisas de satisfação;
-- classificação de comentários;
-- monitoramento de feedback;
-- triagem de grandes volumes de texto.
+- monitoramento de comentários;
+- priorização de grandes volumes de texto;
+- indicadores de experiência do cliente;
+- apoio a dashboards e processos de QA.
 
-## Interpretação crítica
+## Integração técnica
 
-A pontuação de confiança representa a confiança do modelo na previsão; não significa certeza absoluta nem mede diretamente o estado emocional de uma pessoa. Ironia, contexto, negação, linguagem informal e vocabulário específico de domínio podem afetar o resultado.
+A Microsoft disponibiliza REST APIs e bibliotecas cliente para trabalhar com Azure Language. Uma integração normalmente envolve um recurso do serviço, endpoint e autenticação. A análise pode ser usada de forma síncrona e existem também mecanismos assíncronos para cargas maiores.
 
-Por isso, resultados automatizados devem ser tratados como **evidência para análise**, e não como verdade incontestável.
+## Qualidade e IA responsável
 
-## Relação com o projeto
+Um modelo pode apresentar vieses ou desempenho desigual entre domínios, idiomas e estilos de escrita. Antes de automatizar decisões, é recomendável testar exemplos representativos, avaliar falsos positivos e falsos negativos e manter revisão humana em decisões de maior impacto.
 
-Este recurso constitui um dos principais focos do projeto e está relacionado diretamente ao estudo de NLP e à avaliação crítica de respostas produzidas por sistemas de IA.
+## Escopo deste projeto
 
-## Fonte oficial
+Neste portfólio, o recurso é documentado como parte do estudo de **processamento de linguagem natural, avaliação crítica de respostas de IA e compreensão de serviços Azure**. A documentação não deve ser interpretada como prova de implantação produtiva.
 
-[Microsoft Learn — Sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/overview)
+## Fontes oficiais
+
+- [Microsoft Learn — Sentiment Analysis e Opinion Mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api)
+- [Microsoft Learn — Azure Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
+- [Microsoft Learn — Developer guide](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/developer-guide)
 
 ---
 
