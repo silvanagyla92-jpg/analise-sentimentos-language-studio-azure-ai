@@ -23,3 +23,10 @@ O projeto não deve ser interpretado como implementação de todos os serviços 
 - registrar exemplos reproduzíveis;
 - aprofundar avaliação de qualidade e IA responsável;
 - acompanhar mudanças de ciclo de vida dos serviços Microsoft.
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
