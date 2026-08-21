@@ -22,7 +22,7 @@ Texto → Azure Language → Sentimento → Confiança → Interpretação
 - classificação de comentários;
 - triagem de grandes volumes de texto.
 
-A Microsoft recomenda considerar limites de dados, idioma e contexto ao interpretar os resultados. Para chamadas síncronas, o resultado é retornado imediatamente e os dados não são armazenados na conta pelo serviço nesse fluxo. citehttps://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call
+A Microsoft documenta que o resultado pode ser obtido em nível de sentença e documento, com pontuações de confiança, e orienta considerar idioma, limites e características do texto ao processar os dados.
 
 ## Relação com o projeto
 
