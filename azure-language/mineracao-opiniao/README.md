@@ -30,3 +30,10 @@ A mineração de opinião foi explorada junto com a análise de sentimentos no l
 ## Fonte oficial
 
 [Microsoft Learn — Use sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call)
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
