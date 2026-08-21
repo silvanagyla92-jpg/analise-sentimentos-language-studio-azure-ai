@@ -155,3 +155,10 @@ Esses itens são **possibilidades futuras**, não resultados já realizados.
 - [Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview)
 - [Sentiment analysis and Opinion Mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api)
 - [Speech Translation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-translation)
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
