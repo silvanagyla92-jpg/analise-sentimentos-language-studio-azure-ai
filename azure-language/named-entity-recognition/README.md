@@ -1,44 +1,74 @@
-# Named Entity Recognition (NER)
+# Named Entity Recognition (NER) — Azure Language
 
-## Objetivo
+## Visão geral
 
-Named Entity Recognition identifica e categoriza entidades mencionadas em texto não estruturado, como pessoas, organizações e locais, conforme as categorias suportadas pelo serviço.
+**Named Entity Recognition (NER)** identifica e classifica entidades mencionadas em textos. Em vez de tratar todo o documento como uma sequência de palavras sem estrutura, o modelo procura reconhecer categorias semânticas relevantes, como pessoas, organizações, locais, datas e outros tipos suportados pelo serviço.
+
+## Exemplo conceitual
+
+Entrada:
+
+> "A Microsoft anunciou uma nova iniciativa em São Paulo em agosto de 2026."
+
+Uma saída conceitual pode identificar elementos como:
+
+```text
+Microsoft      → organização
+São Paulo      → localização
+agosto de 2026 → expressão temporal
+```
+
+As categorias e entidades efetivamente retornadas dependem do modelo, idioma e versão do serviço.
 
 ## Fluxo
 
 ```text
-Texto → NER → Entidades + categorias → Informação estruturada
+Documento
+   ↓
+Análise linguística
+   ↓
+Detecção de entidades
+   ↓
+Classificação por categoria
+   ↓
+Offsets / informações da ocorrência
+   ↓
+Uso estruturado na aplicação
 ```
 
-## Exemplo conceitual
+## NER x Key Phrase Extraction
 
-```text
-"A Microsoft possui escritórios em São Paulo."
+- **NER** procura entidades que se encaixam em categorias semânticas.
+- **Key Phrase Extraction** procura conceitos ou expressões importantes, sem exigir que sejam entidades nomeadas.
 
-Microsoft  → Organização
-São Paulo  → Localização
-```
+Uma empresa pode ser uma entidade nomeada; "experiência do cliente" pode ser uma frase-chave.
 
 ## Aplicações
 
-- organização de documentos;
-- extração de informação;
-- indexação;
-- enriquecimento de dados;
-- análise de conteúdo;
-- preparação para outras etapas de NLP.
+- extração de informações de documentos;
+- organização de bases textuais;
+- enriquecimento de metadados;
+- identificação de pessoas e organizações em conteúdo permitido;
+- preparação de dados para busca e análise;
+- apoio a pipelines de NLP.
 
-## NER pré-configurado e personalizado
+## Privacidade e segurança
 
-O NER pré-configurado utiliza categorias fornecidas pelo serviço. Para necessidades específicas de um domínio, a Microsoft também oferece recursos de Custom NER, nos quais modelos podem ser construídos com dados próprios.
+A identificação de entidades não significa que seja seguro expor ou armazenar os dados encontrados. Textos podem conter informações pessoais, financeiras ou confidenciais. O projeto deve aplicar minimização de dados, controle de acesso e políticas de retenção adequadas.
 
-## Cuidados
+## Custom NER
 
-Entidades dependem do contexto. Nomes ambíguos, abreviações, erros de escrita e vocabulário especializado podem afetar a identificação. Resultados importantes devem ser validados.
+O Azure Language também possui recursos de **custom named entity recognition**, destinados a cenários em que categorias específicas do domínio precisam ser reconhecidas. Essa abordagem exige dados de treinamento e avaliação mais cuidadosos.
 
-## Fonte oficial
+## Limitações
 
-[Microsoft Learn — Named Entity Recognition](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview)
+Entidades podem ser ambíguas. O mesmo termo pode representar categorias diferentes dependendo do contexto. Erros de ortografia, abreviações, linguagem informal e domínios muito específicos também podem influenciar a qualidade.
+
+## Fontes oficiais
+
+- [Microsoft Learn — Azure Language overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
+- [Microsoft Learn — Developer guide](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/developer-guide)
+- [Azure AI Language REST API](https://learn.microsoft.com/en-us/rest/api/language/)
 
 ---
 
