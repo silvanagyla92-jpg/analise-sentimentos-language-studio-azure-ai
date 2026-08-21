@@ -353,7 +353,17 @@ Para consultar os resultados detalhados, acesse [**Resultados**](./resultados/).
 
 ---
 
-## 12. Contexto do projeto
+## 12. Contato
+
+**Autor:** Nágyla Silva  
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**GitHub:** [silvanagyla92-jpg](https://github.com/silvanagyla92-jpg)
+
+**LinkedIn:** [Nágyla Silva](https://www.linkedin.com/in/n%C3%A1gyla-silva-215aba35/)
+
+---
+
+## 13. Contexto do projeto
 
 **Bootcamp:** Suzano — Python Developer  
 **Plataforma:** DIO
@@ -362,13 +372,14 @@ Para consultar os resultados detalhados, acesse [**Resultados**](./resultados/).
 
 ---
 
-## 13. Autora
-
-**Nágyla Silva**
-
----
-
 ## 14. Repositório
 
 **GitHub:**  
 [Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI](https://github.com/silvanagyla92-jpg/analise-sentimentos-language-studio-azure-ai)
+
+---
+
+**Projeto:** Gestão Financeira Pessoal com NotebookLM  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
