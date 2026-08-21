@@ -32,3 +32,10 @@ Para cada atividade, a evidência deve permitir identificar:
 ## Princípio de rastreabilidade
 
 A evidência deve demonstrar o que foi efetivamente realizado. Conteúdo estudado somente por documentação deve permanecer identificado como estudo conceitual.
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
