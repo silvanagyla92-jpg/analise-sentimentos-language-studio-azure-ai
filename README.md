@@ -347,39 +347,10 @@ Para consultar os resultados detalhados, acesse [**Resultados**](./resultados/).
 
 ---
 
-## 11. Conhecimentos e tecnologias
-
-**Inteligência Artificial | NLP | Azure AI | Azure Language | Language Studio | Azure Speech | Speech Studio | Análise de Sentimentos | Mineração de Opinião | NER | Processamento de Texto | Processamento de Fala | Documentação Técnica | GitHub**
-
----
-
-## 12. Contato
+## 11. Contato
 
 **Autor:** Nágyla Silva  
 **Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
 **GitHub:** [silvanagyla92-jpg](https://github.com/silvanagyla92-jpg)
 
 **LinkedIn:** [Nágyla Silva](https://www.linkedin.com/in/n%C3%A1gyla-silva-215aba35/)
-
----
-
-## 13. Contexto do projeto
-
-**Bootcamp:** Suzano — Python Developer  
-**Plataforma:** DIO
-
-**Área de interesse:** Inteligência Artificial, AI Response Evaluation, AI Training, Data Annotation, QA e tecnologias relacionadas à IA.
-
----
-
-## 14. Repositório
-
-**GitHub:**  
-[Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI](https://github.com/silvanagyla92-jpg/analise-sentimentos-language-studio-azure-ai)
-
----
-
-**Projeto:** Gestão Financeira Pessoal com NotebookLM  
-**Autor:** Nágyla Silva
-
-*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
