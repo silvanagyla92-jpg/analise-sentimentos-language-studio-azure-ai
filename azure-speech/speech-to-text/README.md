@@ -2,36 +2,41 @@
 
 ## Objetivo
 
-O Azure Speech permite reconhecer fala e produzir uma transcrição textual. O recurso pode ser usado em aplicações interativas e em cenários de transcrição em lote.
+Speech to Text converte áudio em texto por meio de reconhecimento automático de fala. O recurso permite transformar uma entrada de voz em texto que pode ser armazenado, pesquisado ou encaminhado para outras etapas de processamento.
 
 ## Fluxo
 
 ```text
-Áudio → Speech to Text → Transcrição → Processamento posterior
+Áudio
+  ↓
+Speech to Text
+  ↓
+Transcrição
+  ↓
+Azure Language / NLP
+  ↓
+Análise
 ```
 
-A transcrição pode alimentar outras etapas de NLP, como análise de sentimentos, entidades ou frases-chave.
+## Aplicações
 
-## Cenários
+- transcrição de reuniões e entrevistas;
+- acessibilidade;
+- atendimento e suporte;
+- geração de legendas;
+- preparação de áudio para análise de linguagem.
 
-- legendagem e acessibilidade;
-- transcrição de reuniões;
-- atendimento e call centers;
-- comandos por voz;
-- análise posterior de conversas.
+## Relação com o projeto
 
-## Batch Speech to Text
-
-A transcrição em lote é adequada quando o processamento não precisa ocorrer como uma interação síncrona imediata e grandes conjuntos de áudio precisam ser processados.
+O Speech to Text é a ponte conceitual entre voz e NLP. Uma transcrição pode ser encaminhada para análise de sentimentos, entidades, frases-chave ou sumarização, formando um fluxo voz → texto → análise.
 
 ## Cuidados
 
-Qualidade do áudio, ruído, sotaque, idioma, terminologia específica e condições de gravação podem influenciar a transcrição. A documentação de idiomas e localidades deve ser consultada antes da implementação.
+Ruído, sotaques, sobreposição de vozes, qualidade do áudio e vocabulário específico podem afetar a transcrição. Quando a precisão for relevante, o texto transcrito deve ser revisado.
 
 ## Fonte oficial
 
-[Microsoft Learn — Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)  
-[Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
+[Microsoft Learn — Speech to text overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text)
 
 ---
 
