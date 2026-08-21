@@ -354,3 +354,10 @@ Para consultar os resultados detalhados, acesse [**Resultados**](./resultados/).
 **GitHub:** [silvanagyla92-jpg](https://github.com/silvanagyla92-jpg)
 
 **LinkedIn:** [Nágyla Silva](https://www.linkedin.com/in/n%C3%A1gyla-silva-215aba35/)
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
