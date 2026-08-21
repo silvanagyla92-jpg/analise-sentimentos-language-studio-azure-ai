@@ -1,40 +1,70 @@
-# Language Detection
+# Language Detection — Azure Language
 
-## Objetivo
+## Visão geral
 
-Language Detection identifica o idioma predominante de um conteúdo textual. A capacidade é útil quando uma aplicação recebe dados multilíngues e precisa encaminhá-los para processamento adequado.
+**Language Detection** identifica o idioma predominante de um texto. O recurso é útil em aplicações multilíngues porque permite determinar qual processamento linguístico deve ser aplicado antes de outras etapas.
 
-## Fluxo
+Por exemplo, um sistema que recebe comentários de usuários em português, inglês e espanhol pode detectar o idioma e encaminhar cada conteúdo para uma análise compatível.
+
+## Fluxo de uma aplicação multilíngue
 
 ```text
-Texto recebido
-      ↓
+Entrada do usuário
+       ↓
 Detecção de idioma
-      ↓
-Idioma identificado
-      ↓
-Roteamento para o processamento adequado
+       ↓
+Roteamento por idioma
+       ↓
+Análise de texto
+       ↓
+Resultado estruturado
 ```
+
+## Exemplo
+
+```text
+"O atendimento foi excelente."
+        ↓
+Português
+        ↓
+Sentiment Analysis / NER / outras análises
+```
+
+A detecção pode ser usada como etapa de roteamento, mas a aplicação deve considerar que alguns textos são curtos demais ou possuem mistura de idiomas para que uma identificação seja inequívoca.
 
 ## Aplicações
 
 - atendimento multilíngue;
-- classificação de documentos por idioma;
-- roteamento de pipelines de NLP;
-- aplicações internacionais;
-- preparação de conteúdo para tradução ou análise.
+- classificação automática de documentos;
+- roteamento de pipelines NLP;
+- triagem de comentários;
+- sistemas de busca e organização de conteúdo;
+- preparação de dados para tradução ou análise.
 
 ## Relação com outros recursos
 
-A detecção de idioma pode ser usada como etapa inicial de um fluxo, ajudando a selecionar serviços, modelos ou configurações compatíveis com a entrada.
+A detecção de idioma pode anteceder recursos como análise de sentimentos, NER e extração de frases-chave. Isso permite criar pipelines em que o resultado de uma etapa influencia a configuração das seguintes.
 
-## Cuidados
+## Pontos de atenção
 
-Textos muito curtos, mistura de idiomas e conteúdos ambíguos podem dificultar a identificação. O suporte efetivo deve ser verificado na documentação atual da Microsoft.
+- textos muito curtos podem ser ambíguos;
+- conteúdo com vários idiomas pode exigir tratamento específico;
+- variantes linguísticas e dialetos podem ter suporte diferente;
+- o idioma detectado não informa, por si só, intenção, sentimento ou identidade do autor.
 
-## Fonte oficial
+## Integração
 
-[Microsoft Learn — Language detection](https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/overview)
+A Microsoft disponibiliza APIs de runtime e bibliotecas cliente para recursos do Azure Language. Para cenários de grande volume, determinados recursos também suportam processamento assíncrono.
+
+## Escopo do projeto
+
+O estudo deste recurso contribui para compreender como sistemas de NLP podem operar sobre dados multilíngues e como a escolha correta do idioma influencia as etapas posteriores de processamento.
+
+## Fontes oficiais
+
+- [Microsoft Learn — Azure Language overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
+- [Microsoft Learn — Asynchronous Language features](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/use-asynchronously)
+- [Microsoft Learn — Developer guide](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/developer-guide)
 
 ---
 
