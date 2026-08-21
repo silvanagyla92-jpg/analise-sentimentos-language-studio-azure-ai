@@ -1,34 +1,43 @@
-# Question Answering / Custom Question Answering
+# Question Answering
 
 ## Conceito
 
-Custom Question Answering (CQA) é um recurso de NLP voltado à construção de experiências conversacionais sobre dados e bases de conhecimento, como FAQs, manuais e documentos.
+Question Answering é uma capacidade de NLP voltada à construção de experiências que respondem perguntas com base em uma fonte de conhecimento definida, como FAQs, manuais e documentos.
 
 ## Funcionamento conceitual
 
 ```text
-Fontes de conhecimento → Base de perguntas/respostas → Consulta → Resposta
+Fontes de conhecimento
+        ↓
+Organização do conteúdo
+        ↓
+Pergunta do usuário
+        ↓
+Recuperação da informação relevante
+        ↓
+Resposta
 ```
 
-O serviço pode trabalhar com fontes importadas, perguntas e respostas, conversas de múltiplas etapas e mecanismos de recuperação/ranking, dependendo da arquitetura utilizada.
+A qualidade da resposta depende da cobertura, organização e atualização da base de conhecimento. O sistema deve ser avaliado com perguntas representativas do uso real.
 
 ## Aplicações
 
 - FAQ automatizado;
 - suporte;
-- bases de conhecimento;
+- bases internas de conhecimento;
 - assistentes virtuais;
-- recuperação de informações.
+- recuperação de informações documentadas.
 
 ## Ciclo conceitual
 
 1. reunir fontes;
-2. estruturar conhecimento;
-3. testar perguntas;
-4. revisar respostas;
-5. publicar/integrar quando apropriado.
+2. estruturar o conhecimento;
+3. criar ou importar conteúdo;
+4. testar perguntas;
+5. revisar respostas;
+6. publicar ou integrar quando apropriado.
 
-## Ciclo de vida atual
+## Ciclo de vida
 
 A Microsoft informa que Custom Question Answering será descontinuado no Azure Language em **31 de março de 2029** e orienta novos projetos para Microsoft Foundry.
 
@@ -38,7 +47,7 @@ Este tema foi estudado conceitualmente e não representa uma implementação pr�
 
 ## Fonte oficial
 
-[Microsoft Learn — Custom Question Answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
+[Microsoft Learn — Question answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
 
 ---
 
