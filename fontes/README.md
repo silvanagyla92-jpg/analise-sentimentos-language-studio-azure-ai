@@ -151,3 +151,10 @@ Ao adicionar uma nova fonte:
 4. evitar links sem contexto;
 5. não apresentar material conceitual como evidência prática;
 6. verificar se a documentação continua atualizada.
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
