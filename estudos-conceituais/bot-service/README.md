@@ -2,7 +2,7 @@
 
 ## Conceito
 
-O Azure AI Bot Service é estudado aqui como componente para criação e integração de experiências de bots conversacionais. O foco desta seção é compreender seu papel arquitetural e sua relação com serviços de linguagem e canais de interação.
+O Azure AI Bot Service é estudado como componente para criação e integração de experiências conversacionais. Seu papel é conectar uma aplicação de bot a canais e serviços necessários para uma experiência de diálogo.
 
 ## Arquitetura conceitual
 
@@ -11,9 +11,9 @@ Usuário
   ↓
 Canal de comunicação
   ↓
-Bot / aplicação conversacional
+Bot / aplicação
   ↓
-Serviços de IA e lógica de negócio
+Lógica + serviços de IA
   ↓
 Resposta
 ```
@@ -29,7 +29,7 @@ Resposta
 
 ## Integração
 
-Um bot pode consumir serviços especializados para linguagem, conhecimento, voz e outras capacidades. A arquitetura final depende dos requisitos da aplicação e dos serviços atualmente suportados.
+Uma solução conversacional pode combinar serviços de linguagem, conhecimento, voz e lógica de negócio. A arquitetura deve ser definida de acordo com os requisitos e com os serviços atualmente suportados pela Microsoft.
 
 ## Escopo
 
