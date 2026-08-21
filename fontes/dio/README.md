@@ -1,24 +1,62 @@
 # Fontes — DIO
 
-## Contexto educacional
+## Papel da DIO no projeto
 
-A DIO foi utilizada como referência educacional e como contexto do desafio que originou este repositório. O material da trilha contribui para situar objetivos de aprendizagem e atividades práticas.
+A **Digital Innovation One (DIO)** é tratada neste repositório como fonte educacional e de contexto de aprendizagem. O conteúdo da DIO ajuda a estruturar o percurso de estudo e a contextualizar práticas de desenvolvimento e IA.
 
-## Papel da fonte
+A documentação técnica de comportamento específico dos serviços Azure deve permanecer fundamentada principalmente nas fontes oficiais da Microsoft.
 
-A DIO funciona como fonte de contexto formativo. Para detalhes técnicos atuais sobre Azure Language, Azure Speech, APIs, suporte de idiomas e ciclo de vida dos serviços, a documentação oficial da Microsoft permanece a referência principal.
+## Como utilizar esta fonte
 
-## Relação com o projeto
+Os materiais educacionais podem contribuir para:
 
-O conteúdo educacional foi complementado por documentação Microsoft para aprofundar conceitos de NLP, análise de sentimentos, processamento de fala e tecnologias conversacionais.
+- introdução aos conceitos;
+- orientação de estudos;
+- exercícios práticos;
+- contextualização profissional;
+- organização de trilhas de aprendizagem;
+- desenvolvimento de vocabulário técnico.
+
+## Relação com este projeto
+
+O projeto de **Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI** pode ser entendido como parte de um percurso de aprendizagem prática em Inteligência Artificial. A DIO contribui como contexto educacional, enquanto a Microsoft fornece a referência técnica primária para os serviços Azure.
 
 ## Critério de uso
 
-Quando houver diferença entre material educacional e documentação técnica atual do fornecedor, deve-se verificar a informação diretamente na documentação oficial da Microsoft antes de implementar qualquer recurso.
+Quando houver diferença entre uma explicação educacional e a documentação técnica atual do produto, a documentação oficial da Microsoft deve ser utilizada para confirmar:
+
+- funcionalidades disponíveis;
+- APIs;
+- limitações;
+- suporte de idiomas;
+- ciclo de vida;
+- orientações atuais de implementação.
+
+## Registro de aprendizado
+
+Para manter o portfólio confiável, é importante registrar separadamente:
+
+```text
+Fonte educacional
+      ↓
+Conceito aprendido
+      ↓
+Documentação oficial
+      ↓
+Validação técnica
+      ↓
+Aplicação / evidência
+```
+
+Esse fluxo evita transformar uma explicação introdutória em uma afirmação técnica sem confirmação.
 
 ## Fonte
 
-[DIO — Digital Innovation One](https://www.dio.me/)
+- [DIO — Digital Innovation One](https://www.dio.me/)
+
+## Observação
+
+Os conteúdos da DIO podem ser atualizados ou reorganizados. Quando uma informação for específica de um produto Azure, recomenda-se verificar a versão atual da documentação oficial da Microsoft antes de utilizá-la em uma implementação.
 
 ---
 
