@@ -1,20 +1,62 @@
 # Evidências — Azure Language
 
-## Finalidade
+## Objetivo
 
-Esta seção reúne evidências das atividades efetivamente realizadas com Azure Language / Language Studio. O objetivo é permitir que outra pessoa compreenda o que foi testado, qual foi a entrada e como o resultado foi interpretado.
+Esta pasta deve concentrar as evidências relacionadas às atividades e experimentações com recursos do **Azure Language**. A função da evidência é demonstrar o que foi efetivamente realizado, observado ou testado, sem misturar resultados comprovados com explicações conceituais.
 
-## Estrutura de uma evidência
+## O que pode ser considerado evidência
 
-Cada registro deve conter:
+- capturas de tela do Language Studio / Microsoft Foundry;
+- exemplos de entradas e respectivas saídas;
+- registros de configuração utilizados no estudo;
+- resultados de chamadas de API, quando apropriado e sem dados sensíveis;
+- tabelas comparativas de respostas;
+- observações sobre comportamento do serviço;
+- arquivos de apoio produzidos durante a prática.
 
-1. **Recurso:** funcionalidade utilizada;
-2. **Contexto:** objetivo do teste;
-3. **Entrada:** texto ou tipo de dado processado;
-4. **Resultado:** saída apresentada pelo serviço;
-5. **Interpretação:** aprendizado obtido;
-6. **Limitações:** aspectos que exigem cautela;
-7. **Evidência visual:** captura de tela quando disponível.
+## Estrutura recomendada
+
+```text
+evidencias/azure-language/
+├── README.md
+├── imagens/
+├── exemplos/
+└── resultados/
+```
+
+As subpastas acima podem ser criadas somente quando houver arquivos reais para armazenar. O repositório não deve criar evidências fictícias apenas para preencher a estrutura.
+
+## Como documentar uma evidência
+
+Cada evidência deve informar, quando possível:
+
+1. recurso utilizado;
+2. objetivo do teste;
+3. entrada fornecida;
+4. configuração relevante;
+5. saída observada;
+6. interpretação;
+7. limitações ou inconsistências encontradas;
+8. data ou contexto da execução.
+
+## Exemplo de registro
+
+```text
+Recurso: Sentiment Analysis
+Objetivo: observar classificação de uma avaliação
+Entrada: texto de teste não sensível
+Saída: polaridade + confiança
+Interpretação: resultado compatível / resultado inesperado
+Observação: avaliar contexto e possíveis ambiguidades
+```
+
+## Evidência x explicação
+
+Uma página que explica como Sentiment Analysis funciona é **documentação**, não evidência de execução. Uma captura de tela de uma análise realmente realizada é evidência. Essa distinção aumenta a credibilidade do portfólio.
+
+## Privacidade
+
+Não devem ser publicados tokens, chaves de API, endpoints privados, dados pessoais, documentos confidenciais ou informações de clientes. Dados reais devem ser anonimizados ou substituídos por exemplos seguros.
 
 ## Critérios de qualidade
 
@@ -23,16 +65,18 @@ Uma boa evidência deve ser:
 - verificável;
 - contextualizada;
 - legível;
-- reproduzível quando possível;
-- separada de conclusões que não sejam sustentadas pelo teste.
+- relevante para o tópico;
+- livre de segredos e dados desnecessários;
+- coerente com o que o README afirma ter sido praticado.
 
-## Segurança e privacidade
+## Relação com o projeto
 
-Nunca registrar chaves, tokens, senhas, strings de conexão ou dados pessoais desnecessários. Capturas devem ser revisadas antes do envio ao GitHub.
+Esta pasta é responsável por separar **o que foi demonstrado na prática** do conteúdo conceitual mantido em `azure-language/`.
 
-## Escopo
+## Fontes
 
-Somente atividades realmente realizadas devem ser apresentadas como evidência prática. Conteúdos estudados conceitualmente permanecem em `estudos-conceituais/`.
+- [Microsoft Learn — Azure Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
+- [Microsoft Learn — Developer guide](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/developer-guide)
 
 ---
 
