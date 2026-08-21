@@ -2,30 +2,41 @@
 
 ## Objetivo
 
-O Pronunciation Assessment avalia aspectos da fala para fornecer feedback sobre a pronúncia. A documentação da Microsoft descreve métricas relacionadas à precisão e fluência e, conforme o cenário e suporte, aspectos como prosódia, vocabulário, gramática e compreensão do tópico.
+Pronunciation Assessment avalia aspectos da pronúncia durante o reconhecimento de fala. Dependendo do cenário e da configuração, o serviço pode fornecer métricas relacionadas à pronúncia, fluência, completude e precisão.
 
 ## Fluxo
 
 ```text
-Fala do usuário → Speech → Avaliação → Métricas/feedback → Aprendizado
+Fala do usuário
+      ↓
+Reconhecimento
+      ↓
+Avaliação da pronúncia
+      ↓
+Métricas / feedback
+      ↓
+Orientação para melhoria
 ```
 
 ## Aplicações
 
 - aprendizagem de idiomas;
 - treinamento de pronúncia;
-- plataformas educacionais;
-- preparação para apresentações;
-- feedback automatizado de fala.
+- aplicações educacionais;
+- exercícios de fala;
+- feedback automatizado em experiências de aprendizagem.
 
 ## Cuidados
 
-A disponibilidade de idiomas, localidades e métricas varia. O resultado deve ser entendido como avaliação automatizada e não como substituto universal de avaliação humana especializada.
+Uma pontuação automatizada não substitui avaliação pedagógica ou humana. Pronúncia, sotaque e variações linguísticas devem ser considerados no contexto. É importante verificar idiomas, localidades e recursos efetivamente suportados antes de utilizar o serviço.
+
+## Relação com o projeto
+
+Este recurso representa uma aplicação específica de Speech AI e amplia o estudo de reconhecimento e avaliação de fala dentro do ecossistema Azure.
 
 ## Fonte oficial
 
-[Microsoft Learn — Language learning with Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-learning-overview)  
-[Speech Studio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
+[Microsoft Learn — Pronunciation assessment](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/pronunciation-assessment)
 
 ---
 
