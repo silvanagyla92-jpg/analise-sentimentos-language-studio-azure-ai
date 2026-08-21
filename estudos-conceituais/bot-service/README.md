@@ -21,3 +21,10 @@ O estudo ajuda a conectar os recursos de NLP e Speech com uma camada de aplicaç
 ## Fonte oficial
 
 [Microsoft Azure — AI Bot Service](https://azure.microsoft.com/products/ai-services/ai-bot-service/)
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
