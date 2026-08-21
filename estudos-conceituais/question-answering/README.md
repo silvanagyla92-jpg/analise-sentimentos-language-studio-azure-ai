@@ -1,53 +1,68 @@
-# Question Answering
+# Custom Question Answering — Estudo conceitual
 
-## Conceito
+## O que é
 
-Question Answering é uma capacidade de NLP voltada à construção de experiências que respondem perguntas com base em uma fonte de conhecimento definida, como FAQs, manuais e documentos.
+**Custom Question Answering (CQA)** é um recurso de NLP orientado à construção de experiências conversacionais baseadas em conhecimento fornecido pela organização, como FAQs, manuais e documentos.
 
-## Funcionamento conceitual
+A ideia central é transformar uma coleção de conhecimento em uma base que possa responder perguntas de usuários sem exigir que cada resposta seja programada manualmente.
+
+## Arquitetura conceitual
 
 ```text
-Fontes de conhecimento
-        ↓
-Organização do conteúdo
-        ↓
+Documentos / FAQ
+       ↓
+Base de conhecimento
+       ↓
 Pergunta do usuário
-        ↓
+       ↓
 Recuperação da informação relevante
-        ↓
+       ↓
 Resposta
+       ↓
+Interface conversacional
 ```
 
-A qualidade da resposta depende da cobertura, organização e atualização da base de conhecimento. O sistema deve ser avaliado com perguntas representativas do uso real.
+## Exemplo
+
+Uma empresa possui um manual de atendimento. Um usuário pergunta:
+
+> "Qual é o prazo para troca?"
+
+O sistema procura informação relevante na base de conhecimento e apresenta uma resposta baseada no conteúdo configurado.
+
+## Diferença para um chatbot completo
+
+Question Answering é uma capacidade de conhecimento/perguntas e respostas. Um chatbot completo envolve também interface, gerenciamento de diálogo, autenticação, integrações, regras de negócio e, eventualmente, outros modelos de IA.
 
 ## Aplicações
 
-- FAQ automatizado;
-- suporte;
-- bases internas de conhecimento;
-- assistentes virtuais;
-- recuperação de informações documentadas.
+- FAQs corporativas;
+- suporte interno;
+- manuais de produtos;
+- bases de conhecimento;
+- assistentes de atendimento;
+- portais de autoatendimento.
 
-## Ciclo conceitual
+## Qualidade da base
 
-1. reunir fontes;
-2. estruturar o conhecimento;
-3. criar ou importar conteúdo;
-4. testar perguntas;
-5. revisar respostas;
-6. publicar ou integrar quando apropriado.
+A qualidade das respostas depende da qualidade, atualidade e cobertura do conhecimento fornecido. Documentos contraditórios, desatualizados ou incompletos podem produzir respostas inadequadas.
 
-## Ciclo de vida
+## Status atual
 
-A Microsoft informa que Custom Question Answering será descontinuado no Azure Language em **31 de março de 2029** e orienta novos projetos para Microsoft Foundry.
+A documentação atual da Microsoft informa que **Custom Question Answering será descontinuado no Azure Language em 31 de março de 2029**. Para novos projetos, a Microsoft orienta direcionar as soluções para **Microsoft Foundry** e planejar a migração de cargas existentes.
 
-## Escopo
+## Por que estudar
 
-Este tema foi estudado conceitualmente e não representa uma implementação prática deste repositório.
+Mesmo com a mudança de plataforma, o conceito é importante para compreender **recuperação de conhecimento, sistemas conversacionais e avaliação de respostas**. Esse conhecimento também ajuda a entender arquiteturas modernas baseadas em grounding e RAG.
 
-## Fonte oficial
+## Escopo deste repositório
 
-[Microsoft Learn — Question answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
+Este conteúdo é **estudo conceitual**. Ele não deve ser interpretado como uma implementação produtiva de CQA.
+
+## Fontes oficiais
+
+- [Microsoft Learn — Custom Question Answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
+- [Microsoft Learn — Model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/model-lifecycle)
 
 ---
 
