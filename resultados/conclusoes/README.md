@@ -2,16 +2,32 @@
 
 ## Síntese
 
-O projeto demonstra como serviços de IA podem apoiar o processamento de texto e fala em diferentes etapas: classificação, extração, sumarização, transcrição, tradução e avaliação de fala.
+O projeto demonstra como serviços de IA podem apoiar diferentes etapas de processamento de texto e fala: classificação, extração, sumarização, transcrição, tradução e avaliação de fala.
 
 ## Principal conclusão
 
-O maior resultado do laboratório é a construção de uma visão estruturada do ecossistema Azure AI e da relação entre **dados não estruturados → processamento de IA → resultados interpretáveis**.
+O resultado central é uma visão estruturada do ecossistema Azure AI e da relação entre:
+
+```text
+Dados não estruturados
+        ↓
+Processamento por IA
+        ↓
+Resultados estruturados
+        ↓
+Interpretação humana
+        ↓
+Decisão ou aplicação
+```
+
+## O que o projeto permite afirmar
+
+É possível identificar capacidades, aplicações e limitações dos serviços estudados e organizar esse conhecimento em documentação técnica. Isso não significa que todos os recursos descritos tenham sido implementados neste repositório.
 
 ## Limitações
 
 - resultados de modelos não são verdades absolutas;
-- suporte de idiomas e recursos varia;
+- suporte de idiomas e funcionalidades varia;
 - versões e ciclos de vida dos serviços mudam;
 - evidências devem corresponder a atividades realmente realizadas;
 - aplicações críticas exigem validação, segurança e governança adequadas.
@@ -22,7 +38,7 @@ Recursos explorados no laboratório são documentados como prática. Question An
 
 ## Próxima evolução
 
-A evolução natural é transformar conceitos selecionados em pequenos experimentos reproduzíveis, registrando entrada, configuração, resultado, interpretação e limitações.
+A evolução natural é transformar conceitos selecionados em experimentos reproduzíveis, registrando entrada, configuração, resultado, interpretação e limitações.
 
 ---
 
