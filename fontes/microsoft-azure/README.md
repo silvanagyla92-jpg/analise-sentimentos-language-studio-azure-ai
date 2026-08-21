@@ -31,3 +31,10 @@ A documentação oficial da Microsoft é a principal referência técnica deste 
 ## Critério de seleção
 
 As fontes desta pasta priorizam documentação oficial, atualizada e diretamente relacionada ao recurso estudado. Quando uma funcionalidade possui ciclo de vida, depreciação ou migração anunciada, essa informação deve ser registrada na documentação do projeto.
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
