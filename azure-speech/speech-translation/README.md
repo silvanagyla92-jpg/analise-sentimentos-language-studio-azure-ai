@@ -1,39 +1,42 @@
 # Speech Translation
 
-## Conceito
+## Objetivo
 
-O Azure Speech oferece tradução de fala em tempo real, podendo fornecer transcrição e tradução do áudio. Dependendo do cenário, a saída traduzida também pode ser convertida novamente em fala sintetizada.
+Speech Translation combina reconhecimento de fala e tradução para transformar uma fala em outro idioma. O recurso é útil em cenários nos quais a entrada é voz e o resultado necessário está em um idioma diferente.
 
 ## Fluxo
 
 ```text
-Fala no idioma A
-       ↓
-Reconhecimento/transcrição
-       ↓
+Fala
+ ↓
+Reconhecimento de fala
+ ↓
+Texto reconhecido
+ ↓
 Tradução
-       ↓
-Texto no idioma B
-       ↓
-Opcional: voz sintetizada
+ ↓
+Texto traduzido / saída de áudio conforme o cenário
 ```
 
 ## Aplicações
 
 - comunicação multilíngue;
-- atendimento internacional;
+- reuniões e eventos;
 - acessibilidade;
-- eventos e reuniões;
-- experiências de tradução em tempo real.
+- atendimento internacional;
+- protótipos de experiências conversacionais.
 
-## Considerações
+## Cuidados
 
-O suporte de idiomas e funcionalidades varia por recurso e localidade. A documentação oficial deve ser consultada para confirmar combinações de idiomas disponíveis.
+A qualidade depende do reconhecimento da fala e da tradução. Ruído, sotaques, termos técnicos, ambiguidade e contexto podem produzir resultados inadequados. Idiomas e funcionalidades disponíveis devem ser verificados na documentação atual.
+
+## Relação com o projeto
+
+O recurso amplia o fluxo de voz do projeto e demonstra como fala, tradução e processamento de linguagem podem ser combinados em uma arquitetura de IA.
 
 ## Fonte oficial
 
-[Microsoft Learn — Speech Translation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-translation)  
-[Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
+[Microsoft Learn — Speech translation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-translation)
 
 ---
 
