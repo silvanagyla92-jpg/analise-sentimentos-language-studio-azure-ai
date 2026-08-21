@@ -2,34 +2,52 @@
 
 ## Conceito
 
-CLU é uma capacidade de compreensão de linguagem natural que permite criar modelos personalizados para prever **intenções** e extrair **entidades** de enunciados.
+Conversational Language Understanding (CLU) permite criar modelos personalizados para interpretar enunciados e identificar **intenções** e **entidades**.
 
-### Exemplo
+## Exemplo
 
 ```text
-Entrada: “Quero consultar o status do meu pedido.”
+Entrada: "Quero saber onde está meu pedido."
 
-Intenção: consultar pedido
+Intenção: consultar_pedido
 Entidade: pedido
 ```
 
 ## Ciclo de desenvolvimento
 
-A documentação da Microsoft descreve um fluxo que envolve rotular dados, treinar o modelo, avaliar desempenho, melhorar o conjunto de dados/modelo, publicar e então usar o modelo para prever intenções e entidades.
+```text
+Dados de exemplo
+      ↓
+Rotulagem
+      ↓
+Treinamento
+      ↓
+Avaliação
+      ↓
+Ajustes
+      ↓
+Publicação
+      ↓
+Predição de intenção e entidades
+```
 
-A qualidade e representatividade dos dados rotulados influenciam diretamente o desempenho.
+A representatividade e a qualidade dos dados de treinamento são fundamentais para o desempenho do modelo. Casos reais, variações linguísticas e exemplos ambíguos devem fazer parte da avaliação.
 
-## Multilíngue
+## Aplicações
 
-A documentação atual permite cenários multilíngues, mas o desempenho deve ser avaliado por idioma e conjunto de dados. É importante verificar suporte e disponibilidade antes de uso em produção.
-
-## Ciclo de vida
-
-A Microsoft informa que CLU será descontinuada no Azure Language em **31 de março de 2029** e recomenda Microsoft Foundry para novos projetos.
+- classificação de intenções;
+- identificação de entidades em comandos;
+- interfaces conversacionais;
+- automação de atendimento;
+- roteamento de solicitações.
 
 ## Escopo
 
 CLU foi estudada conceitualmente neste projeto e não é apresentada como implementação prática.
+
+## Ciclo de vida
+
+A Microsoft informa que CLU será descontinuada no Azure Language em **31 de março de 2029** e recomenda considerar Microsoft Foundry para novos projetos.
 
 ## Fonte oficial
 
