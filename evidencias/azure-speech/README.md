@@ -2,13 +2,13 @@
 
 ## Finalidade
 
-Esta pasta organiza evidências das atividades efetivamente realizadas ou exploradas no Azure Speech / Speech Studio.
+Esta seção organiza evidências das atividades efetivamente realizadas ou exploradas com Azure Speech / Speech Studio.
 
 ## Tipos de evidência
 
 - capturas do Speech Studio;
 - exemplos de áudio, quando apropriado e permitido;
-- transcrições resultantes;
+- transcrições produzidas;
 - exemplos de tradução;
 - avaliações de pronúncia;
 - observações sobre qualidade e limitações.
@@ -19,15 +19,19 @@ Esta pasta organiza evidências das atividades efetivamente realizadas ou explor
 Recurso → Entrada → Processamento → Resultado → Interpretação
 ```
 
-A documentação deve deixar claro se o registro representa uma experimentação real ou apenas um exemplo conceitual.
+Cada evidência deve indicar claramente se representa uma experimentação real ou apenas uma demonstração conceitual.
+
+## Qualidade da evidência
+
+A evidência deve permitir identificar o recurso utilizado e relacionar o resultado ao objetivo do teste. Quando houver áudio ou imagem, o arquivo deve ser acompanhado de uma descrição textual.
 
 ## Segurança e privacidade
 
-Não publicar credenciais, chaves, dados pessoais ou áudios sensíveis. Quando necessário, utilizar dados sintéticos ou anonimizados.
+Não publicar credenciais, chaves, dados pessoais ou áudios sensíveis. Utilizar dados sintéticos ou anonimizados quando necessário.
 
 ## Escopo
 
-As evidências desta área devem comprovar somente atividades realmente realizadas.
+As evidências desta área devem comprovar somente atividades realmente realizadas. Conteúdos teóricos devem permanecer na área de estudos conceituais.
 
 ---
 
