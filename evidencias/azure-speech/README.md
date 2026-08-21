@@ -1,31 +1,33 @@
 # Evidências — Azure Speech
 
-Esta pasta organiza registros das atividades realizadas ou exploradas no Azure Speech / Speech Studio.
+## Finalidade
 
-## Possíveis categorias
+Esta pasta organiza evidências das atividades efetivamente realizadas ou exploradas no Azure Speech / Speech Studio.
 
-- Speech to Text;
-- Batch Speech to Text;
-- Text to Speech;
-- Speech Translation;
-- Pronunciation Assessment;
-- Custom Speech.
+## Tipos de evidência
 
-## O que uma evidência deve mostrar
+- capturas do Speech Studio;
+- exemplos de áudio, quando apropriado e permitido;
+- transcrições resultantes;
+- exemplos de tradução;
+- avaliações de pronúncia;
+- observações sobre qualidade e limitações.
 
-A captura ou registro deve deixar claro qual recurso foi utilizado, qual era o objetivo do teste e qual resultado foi apresentado.
+## Registro recomendado
+
+```text
+Recurso → Entrada → Processamento → Resultado → Interpretação
+```
+
+A documentação deve deixar claro se o registro representa uma experimentação real ou apenas um exemplo conceitual.
 
 ## Segurança e privacidade
 
-Não devem ser publicados tokens, chaves, credenciais ou dados pessoais. Áudios e transcrições que contenham informações identificáveis devem ser substituídos por exemplos apropriados para portfólio ou anonimizados.
+Não publicar credenciais, chaves, dados pessoais ou áudios sensíveis. Quando necessário, utilizar dados sintéticos ou anonimizados.
 
-## Rastreabilidade
+## Escopo
 
-Evidência prática e estudo conceitual devem permanecer separados. Uma página de documentação consultada não substitui a prova de uma atividade efetivamente executada.
-
-## Fonte oficial
-
-[Microsoft Learn — Speech Studio overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
+As evidências desta área devem comprovar somente atividades realmente realizadas.
 
 ---
 

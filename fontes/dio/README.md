@@ -2,13 +2,15 @@
 
 ## Contexto educacional
 
-O projeto foi desenvolvido como entregável do desafio de projeto do **Bootcamp Suzano — Python Developer**, da DIO, conforme registrado no README principal.
+A DIO foi utilizada como referência educacional e contexto do desafio que originou este repositório, especialmente o **Bootcamp Suzano — Python Developer**.
 
-A DIO representa a referência educacional do desafio e do contexto de aprendizagem. A documentação técnica dos serviços Azure é complementada e verificada por meio das fontes oficiais da Microsoft.
+## Papel da fonte
 
-## Uso da fonte
+Os materiais educacionais ajudam a contextualizar o exercício, os objetivos de aprendizagem e a trilha formativa. Para detalhes técnicos atuais de serviços Azure, a documentação oficial da Microsoft permanece a referência principal.
 
-Os materiais educacionais ajudam a contextualizar o laboratório, enquanto a documentação Microsoft deve ser utilizada para confirmar comportamento, recursos, APIs, limitações e ciclo de vida das tecnologias.
+## Relação com o projeto
+
+O conteúdo do desafio foi complementado por documentação Microsoft para aprofundar conceitos de NLP, Azure Language, Azure Speech e tecnologias conversacionais.
 
 ## Fonte
 

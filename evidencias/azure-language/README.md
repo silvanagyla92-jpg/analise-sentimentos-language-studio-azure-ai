@@ -1,37 +1,35 @@
 # Evidências — Azure Language
 
-Esta pasta é destinada aos registros visuais e documentais das atividades realizadas com Azure Language / Language Studio.
+## Finalidade
 
-## O que registrar
+Esta pasta deve concentrar evidências que comprovem as atividades efetivamente realizadas com Azure Language / Language Studio.
 
-Para cada atividade, a evidência deve permitir identificar:
+## O que pode ser registrado
 
-1. recurso utilizado;
-2. objetivo do teste;
-3. entrada analisada, quando apropriado;
-4. resultado apresentado pela ferramenta;
-5. data ou contexto da atividade, se relevante.
+- capturas de tela da interface;
+- exemplos de textos utilizados no laboratório;
+- resultados exibidos pelo serviço;
+- configurações relevantes, sem expor segredos;
+- data ou contexto da atividade;
+- observações sobre interpretação dos resultados.
 
-## Boas práticas
+## Padrão recomendado
 
-- não incluir chaves, tokens ou segredos;
-- remover ou anonimizar dados pessoais;
-- usar exemplos que possam ser compartilhados publicamente;
-- preservar contexto suficiente para que a captura seja compreensível;
-- relacionar a evidência ao tópico documentado.
+Cada evidência deve informar:
 
-## Recursos relacionados
+1. **Recurso:** qual funcionalidade foi utilizada;
+2. **Entrada:** qual tipo de dado foi processado;
+3. **Resultado:** o que o serviço retornou;
+4. **Interpretação:** o que foi aprendido;
+5. **Limitações:** o que não pode ser concluído a partir do resultado.
 
-- análise de sentimentos;
-- mineração de opinião;
-- extração de frases-chave;
-- reconhecimento de entidades;
-- detecção de idioma;
-- sumarização.
+## Segurança
 
-## Princípio de rastreabilidade
+Nunca registrar chaves, tokens, senhas, strings de conexão ou dados pessoais desnecessários. Evidências devem ser anonimizadas quando necessário.
 
-A evidência deve demonstrar o que foi efetivamente realizado. Conteúdo estudado somente por documentação deve permanecer identificado como estudo conceitual.
+## Escopo
+
+Somente atividades realmente realizadas devem ser apresentadas como evidência prática. Estudos conceituais permanecem em `estudos-conceituais/`.
 
 ---
 

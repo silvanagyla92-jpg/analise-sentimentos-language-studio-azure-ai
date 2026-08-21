@@ -1,34 +1,39 @@
 # Speech Translation
 
-## O que é
+## Conceito
 
-Speech Translation combina reconhecimento de fala e tradução para transformar fala em outro idioma. É apropriado para cenários em que o conteúdo chega como áudio e a aplicação precisa trabalhar com uma representação traduzida.
+O Azure Speech oferece tradução de fala em tempo real, podendo fornecer transcrição e tradução do áudio. Dependendo do cenário, a saída traduzida também pode ser convertida novamente em fala sintetizada.
 
-## Fluxo conceitual
+## Fluxo
 
 ```text
-Fala → Reconhecimento → Tradução → Texto traduzido
+Fala no idioma A
+       ↓
+Reconhecimento/transcrição
+       ↓
+Tradução
+       ↓
+Texto no idioma B
+       ↓
+Opcional: voz sintetizada
 ```
-
-Dependendo da solução, o resultado pode ser utilizado por outras etapas de processamento.
 
 ## Aplicações
 
 - comunicação multilíngue;
 - atendimento internacional;
-- reuniões e eventos;
 - acessibilidade;
-- experiências conversacionais com múltiplos idiomas.
+- eventos e reuniões;
+- experiências de tradução em tempo real.
 
-## Cuidados
+## Considerações
 
-Idioma e localidade precisam ser compatíveis com o recurso escolhido. A Microsoft mantém uma tabela específica de suporte porque a cobertura pode variar entre Speech to Text, Translation e outros recursos.
+O suporte de idiomas e funcionalidades varia por recurso e localidade. A documentação oficial deve ser consultada para confirmar combinações de idiomas disponíveis.
 
 ## Fonte oficial
 
-[Microsoft Learn — Language and voice support for Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
-
-[Microsoft Learn — Speech Studio overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
+[Microsoft Learn — Speech Translation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-translation)  
+[Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
 
 ---
 

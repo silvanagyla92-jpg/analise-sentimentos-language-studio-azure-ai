@@ -1,32 +1,32 @@
-# Extração de informações de texto
+# Extração de Informações de Texto
 
-Esta área reúne recursos de processamento textual explorados no projeto, com destaque para **frases-chave** e **Named Entity Recognition (NER)**.
+Esta área reúne dois recursos importantes do Azure Language: **Key Phrase Extraction** e **Named Entity Recognition (NER)**.
 
 ## Frases-chave
 
-A extração de frases-chave identifica termos e expressões relevantes que ajudam a representar os principais assuntos de um texto. Pode apoiar indexação, organização de documentos, descoberta de tópicos e análise de feedback.
+A extração de frases-chave identifica termos e expressões que representam assuntos relevantes do texto. Pode apoiar indexação, organização documental, descoberta de tópicos e análise de feedback.
 
 ## NER — Named Entity Recognition
 
-O reconhecimento de entidades nomeadas identifica e classifica elementos textuais, como pessoas, organizações e locais. O resultado pode transformar texto não estruturado em informações mais estruturadas para análises posteriores.
+O NER identifica e classifica entidades presentes no texto, como pessoas, organizações, locais e outras categorias suportadas. Isso ajuda a transformar conteúdo não estruturado em informação mais estruturada.
 
-## Diferença entre os recursos
+## Comparação
 
 ```text
 Texto
- ├── Frases-chave → principais termos/assuntos
+ ├── Frases-chave → assuntos e conceitos relevantes
  └── NER          → entidades e categorias
 ```
 
-## Relação com o projeto
+## Exemplo conceitual
 
-Esses recursos foram estudados no contexto do Azure Language e ajudam a demonstrar que NLP não se limita à classificação de sentimentos: também envolve extração e estruturação de informação.
+Em “A Microsoft lançou um produto em São Paulo”, um sistema de NER pode identificar **Microsoft** como organização e **São Paulo** como local, enquanto a extração de frases-chave procura os termos mais representativos do conjunto textual.
 
-## Fonte oficial
+## Fontes oficiais
 
-[Microsoft Learn — Azure Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
-
-[Microsoft Learn — Key phrase extraction](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview)
+[Azure Language — visão geral](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)  
+[Key Phrase Extraction](https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview)  
+[Named Entity Recognition](https://learn.microsoft.com/en-us/azure/ai-services/language-service/named-entity-recognition/overview)
 
 ---
 

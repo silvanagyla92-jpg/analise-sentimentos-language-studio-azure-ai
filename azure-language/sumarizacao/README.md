@@ -2,37 +2,36 @@
 
 ## O que é
 
-A sumarização utiliza IA para produzir uma versão condensada de um conteúdo, ajudando o usuário a localizar rapidamente as informações principais de documentos ou conversas.
+A sumarização do Azure Language produz uma versão condensada de conteúdo, ajudando a localizar informações principais sem substituir a leitura da fonte original.
 
-## Tipos de uso
+## Cenários
 
-A documentação atual do Azure Language contempla cenários de sumarização de documentos e de conversas. A escolha do recurso depende do tipo de conteúdo e do resultado desejado.
+A documentação do Azure Language contempla sumarização de documentos e de conversas. A escolha depende do tipo de entrada e do objetivo da aplicação.
 
 ## Fluxo conceitual
 
 ```text
-Documento/conversa extensa
-          ↓
-      Azure Language
-          ↓
-       Resumo
-          ↓
-Leitura e validação humana
+Documento ou conversa
+        ↓
+    Azure Language
+        ↓
+      Resumo
+        ↓
+Validação humana quando necessário
 ```
 
 ## Cuidados
 
-Um resumo é uma transformação automática do conteúdo original. Para decisões importantes, deve ser comparado com a fonte, pois uma sumarização pode omitir detalhes relevantes.
+Um resumo pode omitir detalhes, contexto ou exceções. Para decisões críticas, o conteúdo resumido deve ser confrontado com a fonte original. A qualidade depende também das características do documento e das limitações do serviço.
 
 ## Relação com o projeto
 
-A sumarização integra o conjunto de capacidades de NLP estudadas no laboratório e complementa análise de sentimentos, extração de informações e detecção de idioma.
+A sumarização complementa análise de sentimentos e extração de informações, mostrando que NLP pode atuar tanto na classificação quanto na redução e organização de conteúdo.
 
-## Fonte oficial
+## Fontes oficiais
 
-[Microsoft Learn — Azure Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
-
-[Microsoft Learn — Model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/model-lifecycle)
+[Azure Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)  
+[Model lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/language-service/concepts/model-lifecycle)
 
 ---
 

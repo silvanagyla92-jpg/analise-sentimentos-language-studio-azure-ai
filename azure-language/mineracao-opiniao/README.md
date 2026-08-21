@@ -1,35 +1,38 @@
 # Mineração de Opinião
 
-## O que é
+## Conceito
 
-A mineração de opinião amplia a análise de sentimentos ao relacionar opiniões a aspectos específicos do texto, como características de um produto ou serviço. Em vez de perguntar apenas se um comentário é positivo ou negativo, o objetivo é identificar **sobre o que** a opinião foi expressa.
+A mineração de opinião amplia a análise de sentimentos ao identificar opiniões associadas a aspectos ou características de produtos e serviços. Assim, uma mesma frase pode revelar sentimentos diferentes sobre componentes diferentes.
 
-## Exemplo conceitual
+### Exemplo
 
 ```text
-"A bateria é excelente, mas a tela é ruim."
+“A bateria é excelente, mas a tela é ruim.”
 
-Bateria → opinião positiva
-Tela    → opinião negativa
+Bateria → positivo
+Tela    → negativo
 ```
 
-Isso permite uma análise mais granular de feedbacks.
+## Diferença para análise de sentimentos
+
+**Sentimento:** responde principalmente qual é a polaridade do texto.  
+**Opinião:** acrescenta granularidade ao relacionar a polaridade a aspectos específicos.
 
 ## Aplicações
 
-- avaliações de produtos;
-- pesquisas de satisfação;
-- monitoramento de serviços;
-- análise de comentários;
-- identificação de pontos fortes e problemas recorrentes.
+- análise de avaliações;
+- monitoramento de satisfação;
+- identificação de pontos fortes e problemas;
+- análise de feedback;
+- priorização de melhorias.
 
-## Relação com o projeto
+## Cuidados
 
-A mineração de opinião foi explorada junto com a análise de sentimentos no laboratório. A interpretação deve considerar o contexto e as limitações do modelo, especialmente em textos curtos, irônicos ou ambíguos.
+Resultados automatizados devem ser interpretados no contexto. Ironia, negação, linguagem coloquial e textos curtos podem dificultar a análise.
 
 ## Fonte oficial
 
-[Microsoft Learn — Use sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call)
+[Microsoft Learn — Sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api)
 
 ---
 

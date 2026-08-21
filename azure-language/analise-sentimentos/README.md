@@ -2,35 +2,33 @@
 
 ## Objetivo
 
-A análise de sentimentos identifica a polaridade de um texto e fornece resultados em nível de sentença e documento. No Azure Language, os rótulos principais são **positive**, **neutral** e **negative**, acompanhados de pontuações de confiança.
+A análise de sentimentos do Azure Language classifica a polaridade expressa em texto e retorna rótulos como **positive, neutral e negative**, acompanhados de pontuações de confiança em níveis de sentença e documento. A mineração de opinião pode complementar esse resultado relacionando sentimentos a aspectos específicos.
+
+## Fluxo
+
+```text
+Texto → Azure Language → Polaridade → Confiança → Interpretação humana
+```
 
 ## Como interpretar
 
-O serviço não deve ser tratado como uma verdade absoluta sobre o estado emocional de uma pessoa. O resultado é uma previsão estatística baseada no texto fornecido. Contexto, ironia, ambiguidades, linguagem informal e domínio podem afetar o resultado.
-
-## Fluxo conceitual
-
-```text
-Texto → Azure Language → Sentimento → Confiança → Interpretação
-```
+O resultado é uma previsão do modelo, não uma medição direta do estado emocional de uma pessoa. Ironia, contexto, ambiguidade, linguagem informal e características do domínio podem afetar a interpretação. Pontuação de confiança não significa certeza absoluta.
 
 ## Aplicações
 
-- feedback de clientes;
-- avaliações de produtos e serviços;
+- avaliações de clientes;
 - pesquisas de satisfação;
+- feedbacks;
 - classificação de comentários;
 - triagem de grandes volumes de texto.
 
-A Microsoft documenta que o resultado pode ser obtido em nível de sentença e documento, com pontuações de confiança, e orienta considerar idioma, limites e características do texto ao processar os dados.
-
 ## Relação com o projeto
 
-Este recurso foi explorado no laboratório e constitui um dos principais focos do projeto. A documentação aqui registra o conceito e sua aplicação, sem transformar a previsão do modelo em conclusão humana definitiva.
+Este foi um dos principais recursos explorados no laboratório. O estudo enfatiza interpretação crítica e validação humana, especialmente quando o resultado pode apoiar decisões.
 
 ## Fonte oficial
 
-[Microsoft Learn — Sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call)
+[Microsoft Learn — Sentiment analysis and opinion mining](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/how-to/call-api)
 
 ---
 

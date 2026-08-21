@@ -2,29 +2,41 @@
 
 ## Conhecimentos consolidados
 
-O projeto permitiu consolidar conhecimentos sobre:
+O projeto contribuiu para consolidar conhecimentos em:
 
-- fundamentos de NLP;
+- Processamento de Linguagem Natural;
 - análise de sentimentos e mineração de opinião;
-- extração de informações;
-- reconhecimento de entidades;
+- extração de frases-chave e entidades;
 - detecção de idioma;
 - sumarização;
-- processamento e transcrição de fala;
+- reconhecimento e síntese de fala;
+- tradução de fala;
+- avaliação de pronúncia;
 - leitura de documentação técnica;
-- exploração de serviços de IA em nuvem.
+- organização de estudos em GitHub.
 
 ## Competências relacionadas
 
-Os conhecimentos têm relação com atividades de AI Training, avaliação de respostas, Data Annotation, QA e análise de dados textuais, especialmente quando é necessário interpretar resultados de modelos e documentar critérios de qualidade.
+Os conhecimentos têm relação com atividades de **AI Training, AI Response Evaluation, Data Annotation, QA e documentação técnica**. A relação representa competências desenvolvidas pelo estudo e não constitui declaração de experiência profissional em cada função.
 
 ## Aprendizado metodológico
 
-Além da tecnologia, o projeto reforça uma prática importante: distinguir **o que foi executado**, **o que foi observado** e **o que foi estudado conceitualmente**. Essa distinção aumenta a rastreabilidade e evita apresentar conhecimento teórico como experiência prática.
+Além da tecnologia, o projeto reforçou a importância de:
 
-## Fontes
+- distinguir prática de estudo conceitual;
+- documentar fontes;
+- registrar evidências;
+- avaliar limitações de modelos;
+- evitar conclusões além dos dados observados;
+- manter documentação reproduzível e organizada.
 
-A consolidação foi baseada no README principal e na documentação oficial Microsoft Learn utilizada para compreender os recursos.
+## Próximos passos
+
+- ampliar experimentos práticos;
+- registrar evidências reais;
+- explorar APIs e SDKs;
+- comparar resultados em diferentes entradas;
+- aprofundar IA responsável e avaliação de modelos.
 
 ---
 

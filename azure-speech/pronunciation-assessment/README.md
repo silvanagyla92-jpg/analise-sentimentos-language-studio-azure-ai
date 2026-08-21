@@ -1,31 +1,31 @@
 # Pronunciation Assessment
 
-## O que é
+## Objetivo
 
-Pronunciation Assessment avalia a pronúncia de uma fala e pode fornecer feedback sobre aspectos como precisão e fluência. O Speech Studio oferece um ambiente para testar esse recurso sem código.
+O Pronunciation Assessment avalia aspectos da fala para fornecer feedback sobre a pronúncia. A documentação da Microsoft descreve métricas relacionadas à precisão e fluência e, conforme o cenário e suporte, aspectos como prosódia, vocabulário, gramática e compreensão do tópico.
 
 ## Fluxo
 
 ```text
-Fala do usuário → Speech → Avaliação → Feedback
+Fala do usuário → Speech → Avaliação → Métricas/feedback → Aprendizado
 ```
 
 ## Aplicações
 
 - aprendizagem de idiomas;
 - treinamento de pronúncia;
-- ferramentas educacionais;
-- avaliação de exercícios de fala.
+- plataformas educacionais;
+- preparação para apresentações;
+- feedback automatizado de fala.
 
-## Interpretação
+## Cuidados
 
-Uma pontuação automatizada deve ser interpretada como apoio à avaliação, não como substituição de avaliação pedagógica ou humana quando esta for necessária.
+A disponibilidade de idiomas, localidades e métricas varia. O resultado deve ser entendido como avaliação automatizada e não como substituto universal de avaliação humana especializada.
 
 ## Fonte oficial
 
-[Microsoft Learn — Speech Studio overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
-
-[Microsoft Learn — Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
+[Microsoft Learn — Language learning with Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-learning-overview)  
+[Speech Studio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
 
 ---
 

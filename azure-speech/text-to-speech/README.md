@@ -1,13 +1,13 @@
 # Text to Speech
 
-## O que é
+## Objetivo
 
-Text to Speech transforma texto em fala sintetizada. O Azure Speech oferece vozes e localidades para diferentes cenários de geração de áudio.
+Text to Speech, também chamado de síntese de fala, converte texto em voz sintetizada. O Azure Speech disponibiliza vozes padrão e recursos para criar experiências de áudio mais naturais.
 
 ## Fluxo
 
 ```text
-Texto → Síntese de fala → Áudio
+Texto → Speech Service → Voz sintetizada → Aplicação/dispositivo
 ```
 
 ## Aplicações
@@ -15,17 +15,22 @@ Texto → Síntese de fala → Áudio
 - leitores de conteúdo;
 - acessibilidade;
 - assistentes virtuais;
-- aplicações educacionais;
-- interfaces por voz;
-- geração de áudio a partir de conteúdo textual.
+- sistemas de atendimento;
+- conteúdos educacionais;
+- interfaces multimodais.
 
-A disponibilidade de vozes e localidades varia conforme o recurso e a região; por isso, a documentação de suporte deve ser consultada antes de projetar uma solução.
+## Recursos relacionados
+
+A documentação atual inclui suporte a vozes neurais, SSML, síntese de textos longos e recursos de voz personalizada, conforme disponibilidade e requisitos do serviço.
+
+## Cuidados
+
+A disponibilidade de vozes e localidades varia. Antes de uma implementação, deve-se verificar suporte de idioma, voz, região, requisitos de uso e políticas aplicáveis.
 
 ## Fonte oficial
 
-[Microsoft Learn — Language and voice support for Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
-
-[Microsoft Learn — Speech Studio overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
+[Microsoft Learn — Text to Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech)  
+[Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
 
 ---
 

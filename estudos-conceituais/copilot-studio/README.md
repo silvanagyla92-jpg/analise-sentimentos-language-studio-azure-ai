@@ -2,29 +2,35 @@
 
 ## Conceito
 
-O Microsoft Copilot Studio foi estudado conceitualmente como uma plataforma para criação e personalização de agentes e experiências conversacionais.
+O Microsoft Copilot Studio foi estudado como plataforma para criação, personalização e gerenciamento de agentes e experiências conversacionais.
+
+## Conceitos relacionados
+
+- agentes;
+- tópicos e fluxos conversacionais;
+- instruções e contexto;
+- integração com dados e serviços;
+- automação;
+- canais de interação.
 
 ## Relação com NLP
 
-Em uma solução conversacional, recursos de linguagem podem ajudar a interpretar solicitações, encaminhar assuntos, recuperar informações e executar ações por meio das integrações disponíveis.
+Enquanto recursos especializados de linguagem podem analisar ou interpretar texto, uma plataforma de agentes combina capacidades de compreensão, diálogo, integração e execução de ações em uma experiência de aplicação.
 
-## Possíveis cenários
+## Exemplo conceitual
 
-- atendimento ao cliente;
-- suporte interno;
-- perguntas frequentes;
-- automação de tarefas;
-- agentes especializados.
+```text
+Usuário → Agente → Compreensão da solicitação →
+Conhecimento/ação → Resposta
+```
 
-## Relação com este projeto
+## Escopo
 
-O estudo foi feito para compreender como tecnologias de linguagem podem evoluir de uma análise isolada de texto para experiências conversacionais e agentes.
-
-**Escopo:** estudo conceitual; não é uma implementação prática realizada neste repositório.
+O Copilot Studio foi explorado **conceitualmente** neste projeto. Não há afirmação de que um agente tenha sido implementado neste repositório.
 
 ## Fonte oficial
 
-[Microsoft Learn — Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+[Microsoft Learn — Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 
 ---
 

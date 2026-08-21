@@ -1,28 +1,28 @@
 # Conclusões
 
-## Resultado geral
+## Síntese
 
-O projeto consolidou uma experiência de aprendizagem em Inteligência Artificial aplicada a texto e fala, com foco em Azure Language e Azure Speech.
+O projeto demonstra como serviços de IA podem apoiar o processamento de texto e fala em diferentes etapas: classificação, extração, sumarização, transcrição, tradução e avaliação de fala.
 
-## Principais conclusões
+## Principal conclusão
 
-1. NLP oferece diferentes capacidades complementares: classificar sentimentos, extrair informação, detectar idioma e resumir conteúdo.
-2. Speech pode transformar áudio em texto e permitir que uma etapa posterior de NLP analise a transcrição.
-3. Recursos diferentes têm objetivos diferentes e não devem ser tratados como equivalentes.
-4. Resultados automatizados precisam ser interpretados considerando contexto, idioma, qualidade dos dados e limitações do modelo.
-5. Documentação técnica é parte importante do processo de aprendizagem e avaliação de soluções de IA.
+O maior resultado do laboratório é a construção de uma visão estruturada do ecossistema Azure AI e da relação entre **dados não estruturados → processamento de IA → resultados interpretáveis**.
 
 ## Limitações
 
-O projeto não deve ser interpretado como implementação de todos os serviços descritos. Question Answering, CLU, Copilot Studio e Azure AI Bot Service foram estudados conceitualmente.
+- resultados de modelos não são verdades absolutas;
+- suporte de idiomas e recursos varia;
+- versões e ciclos de vida dos serviços mudam;
+- evidências devem corresponder a atividades realmente realizadas;
+- aplicações críticas exigem validação, segurança e governança adequadas.
 
-## Próximos passos
+## Distinção metodológica
 
-- ampliar evidências práticas;
-- testar fluxos integrando Speech e Language;
-- registrar exemplos reproduzíveis;
-- aprofundar avaliação de qualidade e IA responsável;
-- acompanhar mudanças de ciclo de vida dos serviços Microsoft.
+Recursos explorados no laboratório são documentados como prática. Question Answering, CLU, Copilot Studio e Bot Service permanecem classificados como estudos conceituais.
+
+## Próxima evolução
+
+A evolução natural é transformar conceitos selecionados em pequenos experimentos reproduzíveis, registrando entrada, configuração, resultado, interpretação e limitações.
 
 ---
 
