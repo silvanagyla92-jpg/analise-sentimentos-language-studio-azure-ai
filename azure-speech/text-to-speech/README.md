@@ -2,35 +2,39 @@
 
 ## Objetivo
 
-Text to Speech, também chamado de síntese de fala, converte texto em voz sintetizada. O Azure Speech disponibiliza vozes padrão e recursos para criar experiências de áudio mais naturais.
+Text to Speech converte texto em fala sintetizada. O serviço permite gerar áudio a partir de conteúdo textual utilizando vozes e configurações compatíveis com os idiomas e localidades suportados.
 
 ## Fluxo
 
 ```text
-Texto → Speech Service → Voz sintetizada → Aplicação/dispositivo
+Texto
+ ↓
+Text to Speech
+ ↓
+Voz sintetizada
+ ↓
+Áudio
 ```
 
 ## Aplicações
 
-- leitores de conteúdo;
-- acessibilidade;
-- assistentes virtuais;
-- sistemas de atendimento;
-- conteúdos educacionais;
-- interfaces multimodais.
-
-## Recursos relacionados
-
-A documentação atual inclui suporte a vozes neurais, SSML, síntese de textos longos e recursos de voz personalizada, conforme disponibilidade e requisitos do serviço.
+- acessibilidade e leitura de conteúdo;
+- assistentes e interfaces conversacionais;
+- geração de áudio para aplicações;
+- respostas faladas em sistemas digitais;
+- experiências educacionais.
 
 ## Cuidados
 
-A disponibilidade de vozes e localidades varia. Antes de uma implementação, deve-se verificar suporte de idioma, voz, região, requisitos de uso e políticas aplicáveis.
+A voz sintetizada não representa uma fala humana espontânea. A escolha de voz, idioma e configuração deve considerar o público e o contexto de uso. Aplicações voltadas a pessoas devem deixar claro quando a voz é gerada artificialmente.
+
+## Relação com o projeto
+
+Text to Speech complementa Speech to Text: um fluxo pode receber voz, transformar em texto, processar o conteúdo e gerar uma resposta novamente em áudio.
 
 ## Fonte oficial
 
-[Microsoft Learn — Text to Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech)  
-[Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
+[Microsoft Learn — Text to speech overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech)
 
 ---
 
