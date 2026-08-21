@@ -2,34 +2,37 @@
 
 ## Finalidade
 
-Esta pasta deve concentrar evidências que comprovem as atividades efetivamente realizadas com Azure Language / Language Studio.
+Esta seção reúne evidências das atividades efetivamente realizadas com Azure Language / Language Studio. O objetivo é permitir que outra pessoa compreenda o que foi testado, qual foi a entrada e como o resultado foi interpretado.
 
-## O que pode ser registrado
+## Estrutura de uma evidência
 
-- capturas de tela da interface;
-- exemplos de textos utilizados no laboratório;
-- resultados exibidos pelo serviço;
-- configurações relevantes, sem expor segredos;
-- data ou contexto da atividade;
-- observações sobre interpretação dos resultados.
+Cada registro deve conter:
 
-## Padrão recomendado
+1. **Recurso:** funcionalidade utilizada;
+2. **Contexto:** objetivo do teste;
+3. **Entrada:** texto ou tipo de dado processado;
+4. **Resultado:** saída apresentada pelo serviço;
+5. **Interpretação:** aprendizado obtido;
+6. **Limitações:** aspectos que exigem cautela;
+7. **Evidência visual:** captura de tela quando disponível.
 
-Cada evidência deve informar:
+## Critérios de qualidade
 
-1. **Recurso:** qual funcionalidade foi utilizada;
-2. **Entrada:** qual tipo de dado foi processado;
-3. **Resultado:** o que o serviço retornou;
-4. **Interpretação:** o que foi aprendido;
-5. **Limitações:** o que não pode ser concluído a partir do resultado.
+Uma boa evidência deve ser:
 
-## Segurança
+- verificável;
+- contextualizada;
+- legível;
+- reproduzível quando possível;
+- separada de conclusões que não sejam sustentadas pelo teste.
 
-Nunca registrar chaves, tokens, senhas, strings de conexão ou dados pessoais desnecessários. Evidências devem ser anonimizadas quando necessário.
+## Segurança e privacidade
+
+Nunca registrar chaves, tokens, senhas, strings de conexão ou dados pessoais desnecessários. Capturas devem ser revisadas antes do envio ao GitHub.
 
 ## Escopo
 
-Somente atividades realmente realizadas devem ser apresentadas como evidência prática. Estudos conceituais permanecem em `estudos-conceituais/`.
+Somente atividades realmente realizadas devem ser apresentadas como evidência prática. Conteúdos estudados conceitualmente permanecem em `estudos-conceituais/`.
 
 ---
 
