@@ -6,7 +6,7 @@ Repositório desenvolvido como entregável do desafio de projeto do **Bootcamp S
 
 O projeto reúne estudos, experimentações, conceitos técnicos e aprendizados relacionados ao **Azure Language / Language Studio** e ao **Azure Speech / Speech Studio**, além da exploração conceitual de tecnologias relacionadas à linguagem conversacional, sistemas de perguntas e respostas e agentes de IA.
 
-> **TL;DR:** Projeto de aprendizagem em Azure AI com foco em **NLP, análise de sentimentos, mineração de opinião, reconhecimento de entidades, processamento de texto e fala**. Também foram estudados conceitualmente **Question Answering, Conversational Language Understanding (CLU), Microsoft Copilot Studio e Azure AI Bot Service**.
+> **TL;DR:** Projeto de aprendizagem em Azure AI com foco em **NLP, análise de sentimentos, mineração de opinião, extração de informações, detecção de idioma, sumarização e processamento de fala**. Também foram estudados conceitualmente **Question Answering, Conversational Language Understanding (CLU), Microsoft Copilot Studio e Azure AI Bot Service**.
 
 ### Escopo
 
@@ -16,15 +16,15 @@ Os recursos de Azure Language e Azure Speech foram explorados no contexto do lab
 
 ## 2. Navegação do projeto
 
-A documentação está organizada por domínio e por finalidade. As áreas práticas são separadas dos estudos conceituais e das áreas de evidências, resultados e fontes.
+A documentação está organizada por domínio e finalidade. As áreas práticas são separadas dos estudos conceituais e das áreas de evidências, resultados e fontes.
 
 | Área | Conteúdo |
 |---|---|
-| [**Azure Language**](./azure-language/) | NLP, análise de sentimentos, mineração de opinião, extração de informações e sumarização. |
+| [**Azure Language**](./azure-language/) | Sentiment Analysis, Opinion Mining, Key Phrase Extraction, NER, Language Detection e Summarization. |
 | [**Azure Speech**](./azure-speech/) | Speech to Text, Text to Speech, Speech Translation e Pronunciation Assessment. |
 | [**Estudos conceituais**](./estudos-conceituais/) | Question Answering, CLU, Copilot Studio e Bot Service. |
 | [**Evidências**](./evidencias/) | Critérios e organização dos registros das atividades práticas. |
-| [**Resultados**](./resultados/) | Aprendizados, competências, conclusões e limitações. |
+| [**Resultados**](./resultados/) | Learnings, Conclusions, competências e limitações. |
 | [**Fontes**](./fontes/) | Referências oficiais Microsoft e materiais complementares. |
 
 ### Estrutura atual do repositório
@@ -36,13 +36,17 @@ analise-sentimentos-language-studio-azure-ai/
 │
 ├── azure-language/
 │   ├── README.md
-│   ├── analise-sentimentos/
+│   ├── sentiment-analysis/
 │   │   └── README.md
-│   ├── mineracao-opiniao/
+│   ├── opinion-mining/
 │   │   └── README.md
-│   ├── extracao-texto/
+│   ├── key-phrase-extraction/
 │   │   └── README.md
-│   └── sumarizacao/
+│   ├── named-entity-recognition/
+│   │   └── README.md
+│   ├── language-detection/
+│   │   └── README.md
+│   └── summarization/
 │       └── README.md
 │
 ├── azure-speech/
@@ -60,7 +64,7 @@ analise-sentimentos-language-studio-azure-ai/
 │   ├── README.md
 │   ├── question-answering/
 │   │   └── README.md
-│   ├── clu/
+│   ├── conversational-language-understanding/
 │   │   └── README.md
 │   ├── copilot-studio/
 │   │   └── README.md
@@ -76,9 +80,9 @@ analise-sentimentos-language-studio-azure-ai/
 │
 ├── resultados/
 │   ├── README.md
-│   ├── aprendizados/
+│   ├── learnings/
 │   │   └── README.md
-│   └── conclusoes/
+│   └── conclusions/
 │       └── README.md
 │
 └── fontes/
@@ -99,12 +103,12 @@ analise-sentimentos-language-studio-azure-ai/
         ▼                   ▼                   ▼
  Azure Language       Azure Speech       Estudos conceituais
         │                   │                   │
+        │                   │                   │
         └──────────────┬────┴───────────────────┘
                        │
                        ▼
-              Relação entre fala e NLP
+             Relação entre fala e NLP
                        │
-                       ▼
           ┌────────────┼────────────┐
           ▼            ▼            ▼
      Evidências     Resultados     Fontes
@@ -128,7 +132,7 @@ Aplicações: avaliações, feedbacks, pesquisas de satisfação, comentários e
 
 ### 3.3 Extração de informações
 
-Frases-chave ajudam a identificar assuntos relevantes. NER identifica entidades como pessoas, organizações e locais. Esses recursos podem transformar texto não estruturado em informações mais estruturadas.
+Key Phrase Extraction identifica conceitos relevantes. NER identifica entidades como pessoas, organizações e locais. Esses recursos podem transformar texto não estruturado em informações mais estruturadas.
 
 ### 3.4 Detecção de idioma
 
@@ -140,7 +144,7 @@ A sumarização produz versões condensadas de documentos ou conversas, devendo 
 
 ### 3.6 Azure Speech e Speech Studio
 
-Foram estudados Speech to Text, Batch Speech to Text, Text to Speech, Speech Translation, Pronunciation Assessment e Custom Speech.
+Foram estudados Speech to Text, Text to Speech, Speech Translation, Pronunciation Assessment e outros recursos relacionados ao ecossistema Speech.
 
 ---
 
@@ -156,11 +160,11 @@ As competências apresentam relação com **AI Training, AI Response Evaluation,
 
 ### 5.1 Question Answering
 
-O Custom Question Answering foi estudado como tecnologia para construir respostas conversacionais sobre bases de conhecimento. A documentação atual informa que o recurso será descontinuado no Azure Language em **31 de março de 2029**, devendo novos projetos ser direcionados ao Microsoft Foundry.
+Question Answering foi estudado como tecnologia para construir respostas sobre bases de conhecimento. A documentação atual informa mudanças de ciclo de vida para Custom Question Answering e orienta novos projetos a considerar as alternativas atuais do Microsoft Foundry.
 
 ### 5.2 Conversational Language Understanding (CLU)
 
-CLU permite criar modelos personalizados para prever intenções e extrair entidades de enunciados. Também será descontinuada no Azure Language em **31 de março de 2029**, segundo a documentação atual da Microsoft.
+CLU permite criar modelos personalizados para interpretar intenções e extrair entidades. A documentação atual da Microsoft informa que o recurso será descontinuado no Azure Language em **31 de março de 2029** e recomenda considerar Microsoft Foundry para novos projetos.
 
 ### 5.3 Microsoft Copilot Studio
 
@@ -196,10 +200,10 @@ Esses são **cenários possíveis**, não soluções implementadas neste reposit
 
 ### 8.1 Documentação oficial Microsoft
 
-- [Azure Language](https://learn.microsoft.com/pt-br/azure/ai-services/language-service/)
+- [Azure Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/)
 - [Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)
 - [Speech Studio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
-- [Custom Question Answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
+- [Question Answering](https://learn.microsoft.com/en-us/azure/ai-services/language-service/question-answering/overview)
 - [Conversational Language Understanding](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview)
 
 ### 8.2 Conteúdo complementar
