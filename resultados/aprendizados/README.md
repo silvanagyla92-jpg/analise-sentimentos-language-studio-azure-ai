@@ -25,3 +25,10 @@ Além da tecnologia, o projeto reforça uma prática importante: distinguir **o 
 ## Fontes
 
 A consolidação foi baseada no README principal e na documentação oficial Microsoft Learn utilizada para compreender os recursos.
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
