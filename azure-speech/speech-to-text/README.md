@@ -30,3 +30,10 @@ A qualidade depende de fatores como idioma, localidade, áudio, ruído e vocabul
 [Microsoft Learn — Language and voice support for Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
 
 [Microsoft Learn — Speech Studio overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
