@@ -1,44 +1,74 @@
-# Microsoft Copilot Studio
+# Microsoft Copilot Studio — Estudo conceitual
 
-## Conceito
+## O que é
 
-Microsoft Copilot Studio é uma plataforma para criação e gerenciamento de agentes e experiências conversacionais. Ela permite combinar instruções, conhecimento, diálogo, integrações e ações em experiências orientadas a tarefas.
+**Microsoft Copilot Studio** é uma plataforma para criação e personalização de agentes e experiências conversacionais. O conceito combina configuração de tópicos, fontes de conhecimento, ações e integrações para criar experiências capazes de responder e executar tarefas.
 
-## Fluxo conceitual
+## Componentes conceituais
+
+Uma solução pode envolver:
+
+- instruções e comportamento do agente;
+- tópicos e fluxos conversacionais;
+- fontes de conhecimento;
+- conectores e ações;
+- autenticação e permissões;
+- canais de publicação;
+- monitoramento e avaliação.
+
+## Fluxo simplificado
 
 ```text
 Usuário
-  ↓
+   ↓
 Agente
-  ↓
-Compreensão da solicitação
-  ↓
+   ↓
+Interpretação da solicitação
+   ↓
 Conhecimento / ação / integração
-  ↓
-Resposta
+   ↓
+Resposta ou execução
+   ↓
+Feedback e avaliação
 ```
 
-## Conceitos relacionados
+## Exemplo conceitual
 
-- agentes;
-- tópicos e fluxos conversacionais;
-- instruções e contexto;
-- fontes de conhecimento;
-- ações e integrações;
-- canais de interação;
-- monitoramento e avaliação.
+Um agente interno poderia responder perguntas sobre políticas da empresa e, quando necessário, acionar uma automação para consultar um sistema autorizado.
 
-## Relação com NLP
+A diferença importante é que **responder** e **executar uma ação** são capacidades distintas. Uma solução bem projetada precisa controlar quais ações podem ser executadas e com quais permissões.
 
-Recursos especializados de linguagem podem analisar texto, identificar entidades ou sentimentos. Uma plataforma de agentes utiliza essas capacidades dentro de uma experiência maior, combinando compreensão, diálogo, conhecimento e execução de ações.
+## Relação com Azure Language
+
+Recursos de NLP podem ser usados como componentes de soluções conversacionais. O conhecimento estudado em sentimentos, entidades, intenções e question answering ajuda a compreender como agentes interpretam entradas e acessam informações.
+
+## Governança e segurança
+
+Agentes corporativos precisam de controle sobre dados, conectores, identidades e permissões. Informações sensíveis não devem ser expostas apenas porque um agente consegue acessá-las. Também é importante registrar comportamentos relevantes e estabelecer limites para ações automatizadas.
+
+## Avaliação
+
+A qualidade de um agente deve ser avaliada por critérios como:
+
+- correção das respostas;
+- aderência às fontes;
+- capacidade de recusar solicitações inadequadas;
+- comportamento em perguntas ambíguas;
+- segurança das ações;
+- consistência entre diferentes entradas.
+
+## Por que estudar
+
+O Copilot Studio aproxima conceitos de NLP de aplicações reais de agentes. Para um perfil voltado a **AI Trainer e AI Response Evaluator**, ele é relevante porque evidencia a necessidade de testar comportamento, contexto, segurança e qualidade de respostas.
 
 ## Escopo
 
-O Copilot Studio foi estudado conceitualmente neste projeto. Não há afirmação de que um agente tenha sido implementado neste repositório.
+Este documento representa **estudo conceitual** dentro deste projeto. Não afirma a construção de um agente produtivo neste repositório.
 
-## Fonte oficial
+## Fontes oficiais
 
-[Microsoft Learn — Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Microsoft Learn — Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+- [Microsoft Learn — Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
 
 ---
 
