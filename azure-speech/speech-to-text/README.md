@@ -1,42 +1,78 @@
-# Speech to Text
+# Speech to Text — Azure Speech
 
-## Objetivo
+## Visão geral
 
-Speech to Text converte áudio em texto por meio de reconhecimento automático de fala. O recurso permite transformar uma entrada de voz em texto que pode ser armazenado, pesquisado ou encaminhado para outras etapas de processamento.
+**Speech to Text (STT)** converte fala em texto utilizando modelos de reconhecimento automático de fala. A tecnologia permite que aplicações processem áudio como dados textuais e, a partir daí, executem outras tarefas de NLP.
+
+O recurso é especialmente importante em fluxos multimodais nos quais a entrada original é voz, mas a análise posterior acontece sobre texto.
 
 ## Fluxo
 
 ```text
-Áudio
-  ↓
-Speech to Text
-  ↓
+Áudio / voz
+    ↓
+Captura e transmissão
+    ↓
+Modelo de reconhecimento de fala
+    ↓
 Transcrição
-  ↓
-Azure Language / NLP
-  ↓
-Análise
+    ↓
+Texto estruturado
+    ↓
+Azure Language / aplicação
 ```
+
+## Modos de uso
+
+Dependendo do cenário, o Azure Speech oferece reconhecimento de áudio curto, reconhecimento contínuo e recursos para processamento em lote. A escolha depende da duração do áudio, latência desejada e arquitetura da aplicação.
+
+## Exemplo de integração com NLP
+
+```text
+Usuário fala
+    ↓
+Speech to Text
+    ↓
+"O atendimento demorou muito"
+    ↓
+Sentiment Analysis
+    ↓
+Sentimento negativo
+```
+
+Esse fluxo demonstra a integração conceitual entre **Azure Speech** e **Azure Language**.
 
 ## Aplicações
 
-- transcrição de reuniões e entrevistas;
+- transcrição de reuniões;
 - acessibilidade;
-- atendimento e suporte;
-- geração de legendas;
-- preparação de áudio para análise de linguagem.
+- atendimento ao cliente;
+- assistentes de voz;
+- análise de chamadas;
+- legendagem;
+- entrada de voz em aplicações.
+
+## Qualidade da transcrição
+
+Ruído, microfone, distância do locutor, sobreposição de falas, sotaque, velocidade da fala e vocabulário específico podem afetar o reconhecimento. A transcrição deve ser validada quando for usada em processos críticos.
+
+## Idiomas e localidades
+
+O suporte varia por recurso e localidade. A Microsoft mantém uma tabela específica para verificar quais idiomas e localidades estão disponíveis para Speech to Text, Text to Speech, tradução e outros recursos.
+
+## IA responsável
+
+Uma transcrição pode conter informações pessoais e confidenciais. Aplicações devem controlar acesso aos áudios e textos derivados, definir políticas de retenção e informar os usuários quando apropriado sobre o processamento de voz.
 
 ## Relação com o projeto
 
-O Speech to Text é a ponte conceitual entre voz e NLP. Uma transcrição pode ser encaminhada para análise de sentimentos, entidades, frases-chave ou sumarização, formando um fluxo voz → texto → análise.
+O STT é uma etapa importante do fluxo estudado no projeto porque permite transformar **voz em texto analisável**. Depois da transcrição, recursos de NLP podem identificar sentimento, entidades, frases-chave ou outros sinais linguísticos.
 
-## Cuidados
+## Fontes oficiais
 
-Ruído, sotaques, sobreposição de vozes, qualidade do áudio e vocabulário específico podem afetar a transcrição. Quando a precisão for relevante, o texto transcrito deve ser revisado.
-
-## Fonte oficial
-
-[Microsoft Learn — Speech to text overview](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text)
+- [Microsoft Learn — Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)
+- [Microsoft Learn — Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
+- [Microsoft Learn — Azure Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
 
 ---
 
