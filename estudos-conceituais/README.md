@@ -195,3 +195,10 @@ Essa distinção é importante em documentação técnica porque permite separar
 - [Conversational Language Understanding — Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview)
 - [Azure Language — visão geral](https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview)
 - [Microsoft Copilot Studio — documentação](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
+
+---
+
+**Projeto:** Análise de Sentimentos e Processamento de Linguagem Natural com Azure AI  
+**Autor:** Nágyla Silva
+
+*Projeto integrado do portfólio prático de estudos em Inteligência Artificial, com foco em engenharia de prompts, avaliação crítica de respostas de IA e desenvolvimento de competências para AI Trainer, AI Response Evaluator e Data Annotator.*
