@@ -1,97 +1,95 @@
-# Evidências
+# Evidências Documentais
 
 ## 1. Objetivo
 
-Esta pasta reúne as evidências visuais e documentais que comprovam as práticas realizadas durante o laboratório de **Azure AI, Azure Language / Language Studio e Azure Speech / Speech Studio**.
+Esta pasta reúne a **documentação das evidências e dos critérios de evidência** relacionados aos estudos de Azure AI, Azure Language e Azure Speech. Como o projeto foi desenvolvido sem uma assinatura Azure disponível para execução dos serviços, **não são apresentadas capturas de tela, resultados experimentais ou testes realizados diretamente nas plataformas**.
 
-A função desta seção é separar claramente **o que foi efetivamente praticado** do conteúdo que foi apenas estudado conceitualmente.
+O objetivo desta seção é separar claramente:
 
-## 2. Tipos de evidência
+- conteúdo teórico baseado em documentação oficial;
+- exemplos conceituais utilizados para aprendizagem;
+- evidências de execução, quando existirem em um contexto futuro;
+- limitações do ambiente utilizado neste projeto.
 
-Podem ser organizados aqui:
+## 2. Situação atual das evidências
 
-- capturas de tela do Language Studio;
+Neste momento, o repositório deve ser interpretado como um **projeto teórico e documental**. Os exemplos apresentados nas demais pastas servem para explicar como os recursos funcionam e como poderiam ser utilizados, mas não comprovam execução direta no Azure Language Studio, Microsoft Foundry ou Speech Studio.
+
+Não foram criadas evidências fictícias para preencher a estrutura do GitHub.
+
+## 3. O que seria uma evidência prática
+
+Caso exista acesso futuro a um ambiente Azure, poderiam ser documentados:
+
+- capturas de tela do Language Studio ou Microsoft Foundry;
 - capturas de tela do Speech Studio;
-- resultados de análises de sentimentos;
+- entradas e saídas de análises de sentimentos;
 - resultados de mineração de opinião;
 - exemplos de entidades identificadas;
 - resultados de extração de frases-chave;
 - testes de detecção de idioma;
 - resultados de sumarização;
-- testes de Speech to Text;
-- testes de Text to Speech;
-- testes de Speech Translation;
-- registros de Pronunciation Assessment;
-- outros registros diretamente relacionados às práticas realizadas.
+- transcrições de Speech to Text;
+- resultados de Text to Speech;
+- resultados de Speech Translation;
+- registros de Pronunciation Assessment.
 
-## 3. Organização recomendada
+Esses materiais somente devem ser adicionados se forem realmente produzidos durante uma execução.
 
-Quando as evidências forem adicionadas, recomenda-se utilizar nomes descritivos e ordenados, por exemplo:
+## 4. Evidência x documentação conceitual
 
-```text
-evidencias/
-│
-├── README.md
-├── 01-language-studio-sentimentos.png
-├── 02-language-studio-opiniao.png
-├── 03-language-studio-entidades.png
-├── 04-language-studio-frases-chave.png
-├── 05-language-studio-idioma.png
-├── 06-language-studio-sumarizacao.png
-├── 07-speech-studio-speech-to-text.png
-├── 08-speech-studio-text-to-speech.png
-├── 09-speech-studio-translation.png
-└── 10-speech-studio-pronunciation.png
-```
+Uma página que explica o funcionamento de um serviço é **documentação técnica**. Um exemplo criado para explicar um conceito é **exemplo didático**. Uma captura de tela de uma execução real, acompanhada do contexto, entrada e resultado observado, é **evidência prática**.
 
-A nomenclatura é uma sugestão de organização. Os nomes finais devem corresponder aos arquivos realmente existentes no repositório.
+Essas categorias não devem ser misturadas. Essa separação preserva a transparência e a credibilidade do portfólio.
 
-## 4. Como documentar uma evidência
+## 5. Modelo para futuras evidências
 
-Cada evidência deve, sempre que possível, estar associada a quatro informações:
+Quando houver uma execução real, cada registro poderá conter:
 
 | Informação | O que registrar |
 |---|---|
-| Recurso | Qual serviço ou funcionalidade foi testado |
-| Ação | O que foi realizado |
-| Entrada | Qual texto, áudio ou dado foi utilizado |
-| Resultado | O que o serviço retornou ou apresentou |
+| Recurso | Serviço ou funcionalidade utilizada |
+| Objetivo | O que se pretendia observar |
+| Entrada | Texto, áudio ou dado utilizado |
+| Configuração | Idioma, modelo ou parâmetros relevantes |
+| Resultado | Saída efetivamente apresentada |
+| Interpretação | Análise do resultado |
+| Limitações | Problemas, ambiguidades ou fatores que afetaram a saída |
+| Contexto | Data e condições da execução |
 
-### Exemplo
+## 6. Organização futura
 
-**Recurso:** análise de sentimentos  
-**Ação:** envio de um comentário para análise  
-**Entrada:** texto de avaliação  
-**Resultado:** classificação de sentimento e pontuações de confiança
+Se forem obtidas evidências reais posteriormente, elas poderão ser organizadas em:
 
-## 5. Evidência x documentação conceitual
+- `evidencias/azure-language/` — evidências de recursos de linguagem;
+- `evidencias/azure-speech/` — evidências de recursos de fala.
 
-Uma captura de tela de uma documentação da Microsoft **não deve ser apresentada como evidência de execução do laboratório**. Da mesma forma, um exemplo criado apenas para explicar um conceito não comprova que a funcionalidade foi utilizada na prática.
+Os nomes dos arquivos deverão corresponder às evidências realmente existentes, evitando estruturas vazias ou arquivos fictícios.
 
-Por isso, esta pasta deve priorizar registros produzidos durante as atividades efetivamente realizadas.
+## 7. Privacidade e segurança
 
-## 6. Situação atual
+Nunca publicar:
 
-O README principal informa que, neste momento, o projeto possui a documentação técnica consolidada, mas **não possui capturas de tela ou outras evidências visuais organizadas nesta seção**.
+- chaves de API;
+- tokens;
+- senhas;
+- endpoints privados;
+- dados pessoais desnecessários;
+- documentos confidenciais;
+- gravações de terceiros sem autorização.
 
-Assim, esta pasta está preparada para receber as evidências conforme forem organizadas, sem inventar ou atribuir ao laboratório resultados que não estejam documentados.
+Qualquer evidência futura deve ser revisada antes da publicação.
 
-## 7. Critérios de qualidade
+## 8. Critérios de qualidade
 
-Antes de adicionar uma evidência, verificar:
+Uma evidência prática adequada deve ser:
 
-- a imagem está legível;
-- o recurso utilizado pode ser identificado;
-- o contexto da ação está claro;
-- não existem chaves, tokens ou informações pessoais expostas;
-- o arquivo possui nome descritivo;
-- a evidência corresponde realmente ao projeto.
-
-## 8. Privacidade e segurança
-
-Nunca publicar nesta pasta **chaves de API, tokens, senhas, endpoints privados, dados pessoais desnecessários ou informações confidenciais**.
-
-Caso uma captura de tela contenha uma informação sensível, ela deve ser removida ou ocultada antes da publicação.
+- autêntica;
+- verificável;
+- contextualizada;
+- legível;
+- relacionada ao projeto;
+- livre de credenciais e dados sensíveis.
 
 ## 9. Referências oficiais
 
