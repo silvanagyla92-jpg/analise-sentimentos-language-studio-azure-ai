@@ -1,81 +1,97 @@
-# Evidências — Azure Speech
+# Evidências Documentais — Azure Speech
 
-## Objetivo
+## 1. Objetivo
 
-Esta pasta organiza evidências relacionadas aos estudos e experimentações com **Azure Speech**. O objetivo é registrar de forma auditável aquilo que foi realmente observado em recursos como Speech to Text, Text to Speech, Speech Translation e Pronunciation Assessment.
+Esta pasta documenta como poderiam ser organizadas evidências relacionadas ao **Azure Speech**. Como o projeto foi desenvolvido sem uma assinatura Azure disponível para execução dos serviços, **não são apresentadas capturas de tela, transcrições reais ou resultados experimentais produzidos diretamente pelo Speech Studio**.
 
-## Tipos de evidência
+O conteúdo desta seção complementa o estudo teórico de `azure-speech/` e define critérios para uma eventual documentação prática futura.
 
-Podem ser utilizados:
+## 2. Recursos estudados
 
-- capturas de tela do ambiente de estudo;
-- exemplos de áudio autorizados;
-- transcrições produzidas durante testes;
-- resultados de tradução;
-- exemplos de síntese de voz;
-- resultados de avaliação de pronúncia;
-- tabelas de comparação;
-- registros técnicos sem credenciais.
+O projeto aborda conceitualmente:
 
-## Modelo de registro
+- Speech to Text;
+- Text to Speech;
+- Speech Translation;
+- Pronunciation Assessment.
 
-```text
-Recurso:
-Objetivo:
-Entrada:
-Configuração:
-Resultado observado:
-Interpretação:
-Limitações:
-```
+## 3. O que seria uma evidência prática
 
-## Exemplo de fluxo de evidência
+Com acesso futuro a um ambiente compatível, poderiam ser registrados:
 
-```text
-Áudio de teste
-    ↓
-Speech to Text
-    ↓
-Transcrição observada
-    ↓
-Azure Language
-    ↓
-Análise complementar
-```
+- ferramenta e recurso utilizado;
+- idioma e localidade;
+- áudio ou texto de entrada;
+- configurações relevantes;
+- transcrição ou saída gerada;
+- resultado de tradução;
+- resultado de síntese de voz;
+- avaliação de pronúncia;
+- interpretação e limitações observadas.
 
-Quando a prática envolver tradução ou síntese, o fluxo deve identificar claramente o recurso utilizado e separar entrada, processamento e saída.
+Somente resultados realmente produzidos durante uma execução devem ser apresentados como evidência.
 
-## Qualidade do áudio
+## 4. Exemplo conceitual de registro
 
-Evidências de Speech devem registrar, quando relevante, fatores como ruído, qualidade do microfone, duração, idioma e localidade. Esses elementos ajudam a interpretar por que uma transcrição ou avaliação pode ter determinado resultado.
+**Recurso:** Speech to Text  
+**Objetivo:** observar a conversão de fala em texto  
+**Entrada:** áudio de teste autorizado  
+**Resultado esperado segundo a documentação:** transcrição correspondente ao áudio  
+**Interpretação:** avaliação da qualidade da transcrição considerando idioma, pronúncia, ruído e contexto  
+**Observação:** esse registro é apenas um modelo documental e **não representa uma execução realizada neste projeto**.
 
-## Privacidade
+## 5. Relação com NLP
 
-Áudio pode conter voz identificável e informações pessoais. Não publique gravações de terceiros sem autorização. Nunca inclua chaves, tokens ou credenciais nos arquivos, capturas de tela ou exemplos.
+Um fluxo possível em uma solução real seria:
 
-## Evidência x documentação
+Áudio
+→ Speech to Text
+→ Texto
+→ Azure Language
+→ análise de linguagem
 
-Uma explicação sobre Speech to Text pertence à documentação técnica. Uma captura de uma transcrição efetivamente realizada é evidência. O portfólio deve manter essas duas funções separadas.
+Esse fluxo é apresentado neste projeto como arquitetura conceitual. Ele não comprova que uma integração ponta a ponta tenha sido executada.
 
-## Critérios de qualidade
+## 6. Qualidade e interpretação
 
-As evidências devem ser:
+Uma futura evidência de Speech deve considerar fatores como:
 
-- relevantes;
-- legíveis;
-- contextualizadas;
-- reproduzíveis quando possível;
-- protegidas contra exposição de dados sensíveis.
+- qualidade do áudio;
+- ruído ambiente;
+- microfone;
+- idioma;
+- localidade;
+- duração do áudio;
+- pronúncia;
+- vocabulário e contexto.
 
-## Relação com o projeto
+Esses fatores podem influenciar a saída do serviço.
 
-Esta área sustenta a parte prática do estudo de voz e ajuda a demonstrar como recursos de Speech podem ser integrados a pipelines de NLP.
+## 7. Privacidade e segurança
 
-## Fontes oficiais
+Áudios podem conter informações pessoais e características identificáveis da voz. Não devem ser publicados registros de terceiros sem autorização.
+
+Também não devem ser publicados:
+
+- chaves de API;
+- tokens;
+- senhas;
+- credenciais;
+- endpoints privados;
+- informações confidenciais.
+
+## 8. Evidência x documentação
+
+Uma explicação sobre Speech to Text é documentação técnica. Um áudio criado apenas para ilustrar o conceito é exemplo didático. Uma transcrição realmente produzida por uma execução documentada é evidência prática.
+
+O repositório mantém essas categorias separadas para não atribuir ao projeto resultados que não foram observados diretamente.
+
+## 9. Fontes oficiais
 
 - [Microsoft Learn — Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)
 - [Microsoft Learn — Language and voice support](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support)
 - [Microsoft Learn — Pronunciation Assessment](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-pronunciation-assessment)
+- [Microsoft Learn — Speech Studio](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-studio-overview)
 
 ---
 
